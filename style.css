@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Resets */
+
+body {
+  font-family: "poppins", sans-serif;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  max-width: 938px;
+  margin: auto;
+}
+
+/* Nav bar  */
+
+.nav-bar {
+  justify-content: space-between;
+  height: 80px;
+  padding: 0 20px;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.24);
+}
+
+.nav-img {
+  width: 80px;
+}
+
+.nav-left p {
+  font-size: 14px;
+  font-weight: bold;
+  margin-left: 40px;
+}
+
+.nav-list {
+  list-style: none;
+  font-size: 16px;
+  gap: 60px;
+  padding: 0 32px;
+}
+
+.nav-list li {
+  cursor: pointer;
+}
+
+/* Search section  */
+
+.search {
+  flex-direction: column;
+  width: 100%;
+  height: 40vh;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  background-image: url(https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: -135px;
+  margin-bottom: 30px;
+  border: none;
+}
+
+.search-1 {
+  text-align: center;
+  margin: 10px 0;
+  color: white;
+}
+
+.search-1 h1 {
+  font-size: 45px;
+  font-family: "Dela Gothic One", cursive;
+}
+
+.search-1 p {
+  font-size: 30px;
+}
+
+.search-2 {
+  background-color: white;
+  border-radius: 5px;
+  padding: 0 15px;
+}
+.search-bar {
+  height: 42px;
+  width: 35vw;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+}
+
+.search-btn {
+  color: grey;
+  background-color: white;
+  border: none;
+}
+
+.search-btn i {
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* Restaurant section  */
+
+.res-section {
+  flex-wrap: wrap;
+}
+
+.res-card {
+  width: 200px;
+  height: 240px;
+  margin: 15px;
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+
+.res-card:hover {
+  transform: scale(1.1);
+}
+
+.res-img {
+  width: 100%;
+  height: 135px;
+  border-radius: 20px;
+}
+
+.card-text {
+  padding-left: 11px;
+}
