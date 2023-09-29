@@ -66,7 +66,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: -135px;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
   border: none;
 }
 
@@ -112,6 +112,13 @@ body {
 /* Restaurant section  */
 
 .res-section {
+  margin-top: 32px;
+  padding: 16px 0;
+}
+.res-section h2 {
+  margin-left: 15px;
+}
+.card-section {
   flex-wrap: wrap;
 }
 
@@ -135,4 +142,28 @@ body {
 
 .card-text {
   padding-left: 11px;
+}
+
+.card-text p {
+  color: gray;
+  font-size: 14px;
+}
+
+.card-text h3 {
+  font-size: 18px;
+  color: black;
+}
+
+.card-text .cuisines {
+  white-space: nowrap;
+  width: 90%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.rating {
+  gap: 4px;
+}
+.rating img {
+  width: 14px;
 }
