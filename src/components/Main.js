@@ -1,16 +1,34 @@
 import Search from "./search";
-import resList from "../utils/mockData";
 import ResCard from "./ResCard";
-import { useState } from "react";
+import { SAPI } from "../utils/constants";
+import { useEffect, useState } from "react";
 
 const Main = () => {
-  const [ResList, setResList] = useState(resList);
+  const [ResList, setResList] = useState([]);
 
   const updateList = () => {
     const filteredList = ResList.filter(
-      (restaurant) => restaurant.info.avgRating > 4
+      (restaurant) => restaurant?.info?.avgRating > 4
     );
     setResList(filteredList);
+  };
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+
+  const fetchData = async () => {
+    try {
+      const data = await fetch(SAPI);
+
+      const json = await data.json();
+      const mainResList =
+        json?.data?.cards[5]?.card?.card?.gridElements?.infoWithStyle
+          ?.restaurants;
+      setResList(mainResList);
+    } catch (error) {
+      alert(error);
+    }
   };
 
   return (
@@ -23,12 +41,7 @@ const Main = () => {
         <div className="filter-container">
           <ul className="filter-list flex">
             <li>
-              <button
-                className="filter-btns"
-                onClick={() => setResList(resList)}
-              >
-                All available
-              </button>
+              <button className="filter-btns">All available</button>
             </li>
             <li>
               <button className="filter-btns" onClick={updateList}>
