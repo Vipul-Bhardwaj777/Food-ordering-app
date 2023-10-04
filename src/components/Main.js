@@ -17,19 +17,31 @@ const Main = () => {
     fetchData();
   }, []);
 
-  const fetchData = async () => {
-    try {
-      const data = await fetch(SAPI);
-
-      const json = await data.json();
-      const mainResList =
-        json?.data?.cards[5]?.card?.card?.gridElements?.infoWithStyle
-          ?.restaurants;
-      setResList(mainResList);
-    } catch (error) {
-      alert(error);
-    }
+  const fetchData = () => {
+    fetch(SAPI)
+      .then((response) => response.json())
+      .then((json) =>
+        setResList(
+          json?.data?.cards[5]?.card?.card?.gridElements?.infoWithStyle
+            ?.restaurants
+        )
+      )
+      .catch((error) => alert(error));
   };
+
+  // const fetchData = async () => {
+  //   try {
+  //     const data = await fetch(SAPI);
+
+  //     const json = await data.json();
+  //     const mainResList =
+  //       json?.data?.cards[5]?.card?.card?.gridElements?.infoWithStyle
+  //         ?.restaurants;
+  //     setResList(mainResList);
+  //   } catch (error) {
+  //     alert(error);
+  //   }
+  // };
 
   return (
     <div className="main">
