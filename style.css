@@ -52,13 +52,14 @@ body {
   padding: 0 32px;
 }
 
-.nav-list .login-btn {
+.nav-list .nav-btn {
   gap: 12px;
   font-size: 16px;
   font-family: inherit;
   background-color: #fff;
   border: none;
   width: 77px;
+  cursor: pointer;
 }
 
 /* Search section  */

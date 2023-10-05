@@ -13,32 +13,32 @@ const Header = () => {
       <div className="nav-right">
         <ul className="nav-list flex">
           <li>
-            <button className="login-btn flex">
-              <i class="fa-solid fa-gift"></i>
+            <button className="nav-btn flex">
+              <i className="fa-solid fa-gift"></i>
               Offer
             </button>
           </li>
           <li>
-            <button className="login-btn flex">
-              <i class="fa-solid fa-comment"></i>
+            <button className="nav-btn flex">
+              <i className="fa-solid fa-comment"></i>
               Help
             </button>
           </li>
           <li>
             <button
-              className="login-btn flex"
+              className="nav-btn flex"
               onClick={() =>
                 Profile === "Login" ? setProfile("Vipul") : setProfile("Login")
               }
             >
-              <i class="fa-solid fa-user"></i>
+              <i className="fa-solid fa-user"></i>
 
               {Profile}
             </button>
           </li>
           <li>
-            <button className="login-btn flex">
-              <i class="fa-solid fa-cart-shopping"></i>
+            <button className="nav-btn flex">
+              <i className="fa-solid fa-cart-shopping"></i>
               Cart
             </button>
           </li>
