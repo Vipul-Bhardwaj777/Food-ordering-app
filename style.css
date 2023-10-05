@@ -52,8 +52,13 @@ body {
   padding: 0 32px;
 }
 
-.nav-list li {
-  cursor: pointer;
+.nav-list .login-btn {
+  gap: 12px;
+  font-size: 16px;
+  font-family: inherit;
+  background-color: #fff;
+  border: none;
+  width: 77px;
 }
 
 /* Search section  */
@@ -206,4 +211,46 @@ body {
 }
 .rating img {
   width: 14px;
+}
+
+/* Shimmer UI  */
+
+.shimmer-top {
+  width: 100%;
+  height: 40vh;
+  background-color: #d6d8da;
+  margin-bottom: 32px;
+}
+
+.shimmer-cards {
+  flex-wrap: wrap;
+  height: 100vh;
+}
+
+.dummy-card {
+  width: 200px;
+  height: 240px;
+  margin: 15px;
+  background-color: #fff;
+  box-shadow: 0px 3px 18px rgba(0, 0, 0, 0.04);
+}
+
+.shimmer-img {
+  background-color: #d6d8da;
+  height: 50%;
+  bottom: 0px;
+}
+
+.shimmer-line1 {
+  height: 10px;
+  width: 90%;
+  background-color: #d6d8da;
+  margin: 20px 4px;
+}
+
+.shimmer-line2 {
+  height: 10px;
+  width: 70%;
+  background-color: #d6d8da;
+  margin: 20px 4px;
 }
