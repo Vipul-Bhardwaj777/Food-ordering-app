@@ -13,7 +13,7 @@ const ResCard = (props) => {
 
         <div className="rating flex">
           <img className="rating-img" src={STAR} />
-          <h4>{avgRating}</h4>
+          <small>{avgRating}</small>
         </div>
         <p className="cuisines">{cuisines.join(", ")}</p>
         <p>{locality}</p>

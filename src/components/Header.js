@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { LOGO } from "../utils/constants";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [Profile, setProfile] = useState("Login");
@@ -7,26 +8,28 @@ const Header = () => {
   return (
     <nav className="nav-bar flex">
       <div className="nav-left flex">
-        <img className="nav-img" src={LOGO} />
+        <Link to="/">
+          <img className="nav-img" src={LOGO} />
+        </Link>
         <p>Palampur, Himachal Pradesh</p>
       </div>
       <div className="nav-right">
         <ul className="nav-list flex">
           <li>
-            <button className="nav-btn flex">
+            <Link className="nav-link flex" to="/offers">
               <i className="fa-solid fa-gift"></i>
-              Offer
-            </button>
+              Offers
+            </Link>
           </li>
           <li>
-            <button className="nav-btn flex">
+            <Link className="nav-link flex" to="/help">
               <i className="fa-solid fa-comment"></i>
               Help
-            </button>
+            </Link>
           </li>
           <li>
-            <button
-              className="nav-btn flex"
+            <Link
+              className="nav-link flex"
               onClick={() =>
                 Profile === "Login" ? setProfile("Vipul") : setProfile("Login")
               }
@@ -34,13 +37,19 @@ const Header = () => {
               <i className="fa-solid fa-user"></i>
 
               {Profile}
-            </button>
+            </Link>
           </li>
           <li>
-            <button className="nav-btn flex">
+            <Link className="nav-link flex" to="/cart">
               <i className="fa-solid fa-cart-shopping"></i>
               Cart
-            </button>
+            </Link>
+          </li>
+          <li>
+            <Link className="nav-link flex" to="/profile">
+              <i class="fa-solid fa-circle-info"></i>
+              Profile
+            </Link>
           </li>
         </ul>
       </div>
