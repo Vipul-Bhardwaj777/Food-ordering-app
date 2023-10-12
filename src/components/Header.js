@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   const [Profile, setProfile] = useState("Login");
-
   return (
     <nav className="nav-bar flex">
       <div className="nav-left flex">
@@ -47,7 +46,7 @@ const Header = () => {
           </li>
           <li>
             <Link className="nav-link flex" to="/profile">
-              <i class="fa-solid fa-circle-info"></i>
+              <i className="fa-solid fa-circle-info"></i>
               Profile
             </Link>
           </li>

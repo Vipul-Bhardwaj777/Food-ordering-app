@@ -9,8 +9,10 @@
 
 /* Resets */
 :root {
-  --mainText-color: #3d4152;
-  --smallText-color: rgba(2, 6, 12, 0.75);
+  --mainText-color: rgba(2, 6, 12, 0.75);
+  --smallText-color: #8b8d97;
+  --border-color: #e9e9eb;
+  --swiggy-color: #ffa700;
 }
 
 body {
@@ -27,6 +29,10 @@ body {
   margin: auto;
 }
 
+.spacer {
+  height: 30vh;
+}
+
 /* Nav bar  */
 
 .nav-bar {
@@ -36,6 +42,7 @@ body {
   box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.24);
   position: sticky;
   top: 0px;
+  z-index: 100;
   background-color: #fff;
   color: var(--mainText-color);
 }
@@ -179,6 +186,10 @@ body {
   flex-wrap: wrap;
 }
 
+.card-link {
+  text-decoration: none;
+}
+
 .res-card {
   width: 200px;
   height: 240px;
@@ -217,6 +228,13 @@ body {
 }
 
 .card-text .cuisines {
+  white-space: nowrap;
+  width: 90%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-name {
   white-space: nowrap;
   width: 90%;
   overflow: hidden;
@@ -270,4 +288,150 @@ body {
   width: 70%;
   background-color: #d6d8da;
   margin: 20px 4px;
+}
+
+/* Menu page  */
+
+.menu-container {
+  width: 800px;
+  margin: 0 auto;
+  padding: 0 16px;
+  border: 1px solid black;
+}
+
+.menu-search {
+  height: 52px;
+  padding: 16px;
+  margin-bottom: 16px;
+  margin-top: 10px;
+  justify-content: space-between;
+  border: 1px solid black;
+}
+
+.menu-search-right {
+  font-size: 18px;
+  gap: 24px;
+}
+
+.menu-search-left {
+  font-size: 10px;
+  color: var(--smallText-color);
+}
+.top-section {
+  height: 83px;
+  margin-bottom: 18px;
+  justify-content: space-between;
+}
+
+.top-info h2 {
+  font-size: 20px;
+  color: var(--mainText-color);
+}
+.top-info p {
+  font-size: 13px;
+  color: var(--smallText-color);
+}
+
+.top-card {
+  height: 69px;
+  width: 67px;
+  border-radius: 5px;
+  padding: 9px;
+  box-shadow: 0 3px 18px rgba(0, 0, 0, 0.04);
+  border: 1px solid var(--border-color);
+}
+
+.top-card p {
+  font-size: 14px;
+  color: #3d9b6d;
+  font-weight: bold;
+}
+.top-card small {
+  font-size: 7.7px;
+  color: var(--smallText-color);
+  font-weight: bold;
+}
+
+.top-2 {
+  margin-bottom: 19px;
+  font-size: 14px;
+  color: var(--smallText-color);
+}
+
+.hr {
+  border-top: 1px dotted var(--smallText-color);
+  margin-bottom: 18px;
+}
+
+.time-cost {
+  color: var(--mainText-color);
+  gap: 25px;
+  font-weight: bold;
+  font-size: 15px;
+  margin-bottom: 19px;
+}
+
+/* Offer cards  */
+
+.offer-cards {
+  gap: 12px;
+  height: 73px;
+  margin-bottom: 50px;
+  overflow: hidden;
+}
+
+.offer-card {
+  border: 1px solid var(--border-color);
+  box-shadow: 0px 3px 18px rgba(0, 0, 0, 0.04);
+  height: 63px;
+  width: 185px;
+  border-radius: 5px;
+  padding: 9px;
+}
+
+.offer-card h3 {
+  font-size: 14px;
+  margin-bottom: 3px;
+  color: #686b78;
+}
+
+.offer-card p {
+  color: var(--smallText-color);
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.offer-card h3 i {
+  margin-right: 8px;
+  color: var(--swiggy-color);
+}
+
+.veg-filter {
+  height: 14px;
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+
+.veg-filter > p {
+  font-size: 14px;
+}
+
+.veg-filter button {
+  height: 25px;
+  width: 70px;
+  border-radius: 5px;
+  background-color: #ddd;
+  font-weight: bold;
+  color: var(--mainText-color);
+}
+
+.hr-veg {
+  border-top: 1px dotted var(--smallText-color);
+  margin-bottom: 24px;
+}
+
+/* Items section  */
+
+.items-container {
+  border: 1px solid black;
 }

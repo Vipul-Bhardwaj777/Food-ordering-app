@@ -1,7 +1,8 @@
 import ResCard from "./ResCard";
-import { SAPI } from "../utils/constants";
+import { RES_API } from "../utils/constants";
 import { useEffect, useState } from "react";
 import Shimmer from "./Shimmer";
+import { Link } from "react-router-dom";
 
 const Main = () => {
   const [ResList, setResList] = useState([]);
@@ -28,7 +29,7 @@ const Main = () => {
 
   const fetchData = async () => {
     try {
-      const data = await fetch(SAPI);
+      const data = await fetch(RES_API);
 
       const json = await data.json();
       const mainResList =
@@ -55,7 +56,7 @@ const Main = () => {
           <input
             className="search-bar"
             type="text"
-            placeholder="Search for restaurant, cuisine or a dish"
+            placeholder="Search for restaurants"
             value={searchTxt}
             onChange={(event) => setSearchTxt(event.target.value)}
           />
@@ -108,7 +109,13 @@ const Main = () => {
 
         <div className="card-section flex">
           {filterList.map((restaurant) => (
-            <ResCard key={restaurant.info.id} resData={restaurant} />
+            <Link
+              className="card-link"
+              to={"/restaurant/" + restaurant?.info?.id}
+              key={restaurant?.info?.id}
+            >
+              <ResCard resData={restaurant} />
+            </Link>
           ))}
         </div>
       </div>

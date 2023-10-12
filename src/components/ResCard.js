@@ -9,14 +9,14 @@ const ResCard = (props) => {
     <div className="res-card">
       <img className="res-img" src={CLOUDINARY_CDN + cloudinaryImageId} />
       <div className="card-text">
-        <h3>{name}</h3>
+        <h3 className="card-name">{name}</h3>
 
         <div className="rating flex">
           <img className="rating-img" src={STAR} />
           <small>{avgRating}</small>
         </div>
         <p className="cuisines">{cuisines.join(", ")}</p>
-        <p>{locality}</p>
+        <p className="card-locality">{locality}</p>
       </div>
     </div>
   );
