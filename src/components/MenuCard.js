@@ -1,27 +1,27 @@
 import { MENU_CARD_IMGID } from "../utils/constants";
-
+import SmallItem from "./SmallItem";
 const MenuCard = (listProp) => {
   const { itemList } = listProp;
-  const { title, itemCards } = itemList?.card?.card;
-  //   name, price, itemAttribute, description, imageId, category
-  console.log(itemCards)
-//   itemCards.map((item) => (
-//     console.log(item)
-//   ));
+  const { itemCards } = itemList[1]?.card?.card;
+  console.log(itemList[1]?.card?.card);
+  console.log(itemList);
+  const { title } = itemList[1]?.card?.card;
+
   return (
     <div className="menu-cardMain">
-      <div className="mcard-header">
-        <h3>
-          {title}
-        </h3>
+      <div className="title flex">
+        <div className="title-left">
+          <h3>{title}()</h3>
+        </div>
+        <div className="title-right">
+          <i className="fa-solid fa-chevron-up"></i>
+        </div>
       </div>
-      <div className="menuCard-left">
-        <h4>{}</h4>
-        <p>{}</p>
-        <small>{}</small>
-      </div>
-      <div className="menuCard-right">
-        {/* <img className="item-img" src={} /> */}
+
+      <div className="menu-cardCont flex">
+        {itemCards.map((item, id) => (
+          <SmallItem kay={id} info={item?.card?.info} />
+        ))}
       </div>
     </div>
   );

@@ -33,8 +33,6 @@ const ResMenu = () => {
     costForTwoMessage,
     totalRatingsString,
     avgRating,
-    aggregatedDiscountInfo,
-    aggregatedDiscountInfoV2,
   } = menuData?.cards[0]?.card?.card?.info;
 
   const { offers } =
@@ -102,10 +100,7 @@ const ResMenu = () => {
 
         <div className="items-container">
           <h3>
-            {cards.map((List, id) => (
-              <MenuCard key={id} itemList={List} />
-              // console.log(List)
-            ))}
+            <MenuCard itemList={cards} />
           </h3>
         </div>
 
