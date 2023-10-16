@@ -4,8 +4,7 @@ import { NON_VEG } from "../utils/constants";
 import { DUMMY_IMG } from "../utils/constants";
 const SmallItem = (infoProp) => {
   const { info } = infoProp;
-  // console.log(info);
-  const { name, price, itemAttribute, description, imageId, category } = info;
+  const { name, price, itemAttribute, description, imageId } = info;
 
   return (
     <div className="small-itemMain flex">

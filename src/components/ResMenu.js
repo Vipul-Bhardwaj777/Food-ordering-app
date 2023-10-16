@@ -39,7 +39,6 @@ const ResMenu = () => {
     menuData?.cards[1]?.card?.card?.gridElements?.infoWithStyle;
 
   const { cards } = menuData?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR;
-  console.log(cards);
   return (
     <div className="menu-main">
       <div className="menu-container">

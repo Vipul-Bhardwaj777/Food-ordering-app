@@ -310,6 +310,7 @@ body {
 .menu-search-right {
   font-size: 18px;
   gap: 24px;
+  cursor: pointer;
 }
 
 .menu-search-left {
@@ -431,7 +432,9 @@ body {
 
 /* Menu Card */
 .menu-cardMain {
-  margin-bottom: 16px;
+  margin-bottom: 24px;
+  border-bottom: 16px solid #f1f1f6;
+  padding-bottom: 16px;
 }
 .menu-cardCont {
   flex-direction: column;
@@ -440,13 +443,17 @@ body {
 
 .title {
   justify-content: space-between;
+  margin-bottom: 24px;
+  height: 21px;
+  cursor: pointer;
 }
 
 .title-right i {
   margin-right: 16px;
+  align-items: center;
+  margin-bottom: 10px;
 }
-.menu-cardMain h3 {
-  margin-bottom: 24px;
+.title-left h3 {
   color: var(--mainText-color);
 }
 
@@ -454,9 +461,10 @@ body {
 
 .small-itemMain {
   border-bottom: 1px dotted var(--smallText-color);
-  justify-content: space-around;
+  justify-content: space-between;
   gap: 20px;
   padding-bottom: 20px;
+  width: 100%;
 }
 
 .veg-nonveg {
