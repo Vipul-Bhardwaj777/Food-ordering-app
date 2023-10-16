@@ -39,7 +39,7 @@ const ResMenu = () => {
     menuData?.cards[1]?.card?.card?.gridElements?.infoWithStyle;
 
   const { cards } = menuData?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR;
-  // console.log(cards);
+  console.log(cards);
   return (
     <div className="menu-main">
       <div className="menu-container">
@@ -99,9 +99,19 @@ const ResMenu = () => {
         <hr className="hr-veg"></hr>
 
         <div className="items-container">
-          <h3>
-            <MenuCard itemList={cards} />
-          </h3>
+          {cards.map((nextCard, id) =>
+            nextCard?.card?.card?.itemCards === undefined ? (
+              <div></div>
+            ) : (
+              <MenuCard
+                key={id}
+                itemProp={{
+                  itemCardList: nextCard?.card?.card?.itemCards,
+                  title: nextCard?.card?.card?.title,
+                }}
+              />
+            )
+          )}
         </div>
 
         <div className="spacer"></div>

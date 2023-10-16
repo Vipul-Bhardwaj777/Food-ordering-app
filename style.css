@@ -305,7 +305,6 @@ body {
   margin-bottom: 16px;
   margin-top: 10px;
   justify-content: space-between;
-  border: 1px solid black;
 }
 
 .menu-search-right {
@@ -423,7 +422,6 @@ body {
   background-color: #ddd;
   font-weight: bold;
   color: var(--mainText-color);
-  font-family: inherit;
 }
 
 .hr-veg {
@@ -432,7 +430,9 @@ body {
 }
 
 /* Menu Card */
-
+.menu-cardMain {
+  margin-bottom: 16px;
+}
 .menu-cardCont {
   flex-direction: column;
   gap: 20px;
@@ -508,7 +508,9 @@ body {
   font-size: 14px;
   font-weight: lighter;
 }
-
+.smallItem-right {
+  width: 118px;
+}
 .desc-spacer {
   width: 632px;
 }
