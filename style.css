@@ -161,7 +161,7 @@ body {
 }
 
 .filter-list li button {
-  color: var(--smallText-color);
+  color: var(--mainText-color);
 }
 
 .filter-btns {
@@ -178,6 +178,18 @@ body {
   padding: auto;
   width: 100px;
   height: 37px;
+}
+
+.filter-btns i {
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+.active-filter {
+  background-color: #ddd;
+}
+.inactive-filter {
+  background-color: white;
 }
 
 /* Card section  */
@@ -407,13 +419,51 @@ body {
 }
 
 .veg-filter {
-  height: 14px;
   font-size: 14px;
   margin-bottom: 24px;
+  gap: 12px;
+}
+.veg-filter p {
+  margin-bottom: 3px;
+}
+
+#toggle {
+  display: none;
+}
+.switch {
+  background-color: #ddd;
+  width: 36px;
+  height: 19px;
+  display: inline-block;
+  border-radius: 3px;
+  position: relative;
+  transition: all 0.3s linear;
+  margin-top: 3px;
+}
+
+.switch::after {
+  content: "";
+  background-color: #fff;
+  border-radius: 3px;
+  height: 15px;
+  width: 15px;
+  display: inline-block;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  transition: all 0.3s linear;
+}
+
+input[type="checkbox"]:checked + .switch:after {
+  translate: 1rem 0;
+}
+input[type="checkbox"]:checked + .switch {
+  background-color: rgb(0, 128, 0);
 }
 
 .veg-filter > p {
   font-size: 14px;
+  font-weight: bold;
 }
 
 .veg-filter button {

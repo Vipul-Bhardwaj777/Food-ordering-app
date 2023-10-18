@@ -8,12 +8,22 @@ const Main = () => {
   const [ResList, setResList] = useState([]);
   const [filterList, setFilterList] = useState([]);
   const [searchTxt, setSearchTxt] = useState("");
+  const [filter, setFilter] = useState(false);
+  const [isActive, setIsActive] = useState(false);
 
   const updateRatingList = () => {
-    const filteredList = ResList.filter(
-      (restaurant) => restaurant?.info?.avgRating > 4
-    );
-    setFilterList(filteredList);
+    if (filter) {
+      setFilterList(ResList);
+      setFilter(false);
+      setIsActive(false);
+    } else {
+      const filteredList = ResList.filter(
+        (restaurant) => restaurant?.info?.avgRating > 4
+      );
+      setFilterList(filteredList);
+      setFilter(!filter);
+      setIsActive(true);
+    }
   };
 
   const updateSearchList = () => {
@@ -72,17 +82,17 @@ const Main = () => {
         <div className="filter-container">
           <ul className="filter-list flex">
             <li>
-              <button
-                className="filter-btns"
-                onClick={() => {
-                  setFilterList(ResList);
-                }}
-              >
-                All available
+              <button className="filter-btns">
+                Filters<i className="fa-solid fa-sliders"></i>
               </button>
             </li>
             <li>
-              <button className="filter-btns" onClick={updateRatingList}>
+              <button
+                className={`filter-btns ${
+                  isActive ? "active-filter" : "inactive-filter"
+                }`}
+                onClick={updateRatingList}
+              >
                 Rating 4.0+
               </button>
             </li>

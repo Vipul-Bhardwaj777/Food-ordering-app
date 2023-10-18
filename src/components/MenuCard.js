@@ -1,8 +1,6 @@
 import { useState } from "react";
-import { MENU_CARD_IMGID } from "../utils/constants";
 import SmallItem from "./SmallItem";
-const MenuCard = (props) => {
-  const { itemProp } = props;
+const MenuCard = ({ itemProp }) => {
   const { itemCardList, title } = itemProp;
   const [show, setShow] = useState(true);
 
@@ -26,7 +24,7 @@ const MenuCard = (props) => {
       <div className="menu-cardCont flex">
         {show &&
           itemCardList.map((item, id) => (
-            <SmallItem kay={id} info={item?.card?.info} />
+            <SmallItem key={id} info={item?.card?.info} />
           ))}
       </div>
     </div>

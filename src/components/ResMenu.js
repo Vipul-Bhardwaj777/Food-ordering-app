@@ -8,6 +8,8 @@ import MenuCard from "./MenuCard";
 const ResMenu = () => {
   const [menuData, setMenuData] = useState(null);
   const { resId } = useParams();
+  const [veg, setVeg] = useState(false);
+
   useEffect(() => {
     fetchMenuData();
   }, []);
@@ -35,8 +37,9 @@ const ResMenu = () => {
     avgRating,
   } = menuData?.cards[0]?.card?.card?.info;
 
-  const { offers } =
+  const infoWithStyles =
     menuData?.cards[1]?.card?.card?.gridElements?.infoWithStyle;
+  const { offers } = infoWithStyles;
 
   const { cards } = menuData?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR;
   return (
@@ -92,25 +95,49 @@ const ResMenu = () => {
           ))}
         </div>
 
-        <div className="veg-filter">
-          <button className="filter-btns">Veg Only</button>
+        <div className="veg-filter flex">
+          <p>Veg Only</p>
+          <div className="veg-filterBtn">
+            <input
+              type="checkbox"
+              id="toggle"
+              onChange={() => {
+                setVeg(!veg);
+              }}
+            />
+            <label htmlFor="toggle" className="switch"></label>
+          </div>
         </div>
+
         <hr className="hr-veg"></hr>
 
         <div className="items-container">
-          {cards.map((nextCard, id) =>
-            nextCard?.card?.card?.itemCards === undefined ? (
-              <div></div>
-            ) : (
-              <MenuCard
-                key={id}
-                itemProp={{
-                  itemCardList: nextCard?.card?.card?.itemCards,
-                  title: nextCard?.card?.card?.title,
-                }}
-              />
-            )
-          )}
+          {cards.map((nextCard, id) => {
+            const itemCards = nextCard?.card?.card?.itemCards;
+            if (itemCards === undefined) {
+              return <div key={id}></div>;
+            }
+            const itemCardList = veg
+              ? nextCard?.card?.card?.itemCards.filter(
+                  (item) =>
+                    item?.card?.info?.itemAttribute?.vegClassifier === "VEG"
+                )
+              : nextCard?.card?.card?.itemCards;
+            const title = nextCard?.card?.card?.title;
+            if (itemCardList === undefined || itemCardList.length === 0) {
+              return <div key={id}></div>;
+            } else {
+              return (
+                <MenuCard
+                  key={id}
+                  itemProp={{
+                    itemCardList,
+                    title,
+                  }}
+                />
+              );
+            }
+          })}
         </div>
 
         <div className="spacer"></div>
