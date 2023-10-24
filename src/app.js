@@ -5,7 +5,6 @@ import Main from "./components/Main";
 import OfferPage from "./components/OfferPage";
 import ErrorPage from "./components/ErrorPage";
 import HelpPage from "./components/HelpPage";
-import ProfilePage from "./components/Profilepage";
 import CartPage from "./components/CartPage";
 import ResMenu from "./components/ResMenu";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
@@ -34,11 +33,7 @@ const appRouter = createBrowserRouter([
       },
       {
         path: "/help",
-        element: <HelpPage />,
-      },
-      {
-        path: "/profile",
-        element: <ProfilePage />,
+        element: <HelpPage name={"assistant"} id={"123"} />,
       },
       {
         path: "/cart",
