@@ -1,15 +1,19 @@
 import ResCard from "./ResCard";
-import { RES_API } from "../utils/constants";
 import { useEffect, useState } from "react";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
+import useResListData from "../utils/useResListData";
 
 const Main = () => {
-  const [ResList, setResList] = useState([]);
+  const ResList = useResListData();
   const [filterList, setFilterList] = useState([]);
   const [searchTxt, setSearchTxt] = useState("");
   const [filter, setFilter] = useState(false);
   const [isActive, setIsActive] = useState(false);
+
+  useEffect(() => {
+    setFilterList(ResList);
+  }, [ResList]);
 
   const updateRatingList = () => {
     if (filter) {
@@ -31,25 +35,6 @@ const Main = () => {
       restaurant?.info?.name?.toLowerCase().includes(searchTxt.toLowerCase())
     );
     setFilterList(searchFilteredList);
-  };
-
-  useEffect(() => {
-    fetchData();
-  }, []);
-
-  const fetchData = async () => {
-    try {
-      const data = await fetch(RES_API);
-
-      const json = await data.json();
-      const mainResList =
-        json?.data?.cards[5]?.card?.card?.gridElements?.infoWithStyle
-          ?.restaurants;
-      setResList(mainResList);
-      setFilterList(mainResList);
-    } catch (error) {
-      alert(error);
-    }
   };
 
   return ResList.length === 0 ? (
