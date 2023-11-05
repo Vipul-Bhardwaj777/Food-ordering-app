@@ -47,22 +47,25 @@ const Main = () => {
     <Shimmer />
   ) : (
     <div className="main">
-      <div className="search flex">
-        <div className="search-1">
-          <h1>Tomato</h1>
-          <p>Discover the best food & drinks</p>
+      <div className="search flex-center flex-col w-[100%] h-[40vh] justify-center bg-[url('https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png')] bg-cover bg-no-repeat mb-8 bg-[center_-8rem] ">
+        <div className="search-1 my-[10px] text-center text-white ">
+          <h1 className="text-[45px] font-gothic ">Tomato</h1>
+          <p className="text-[30px]">Discover the best food & drinks</p>
         </div>
 
-        <div className="search-2 flex">
+        <div className="search-2 flex-center bg-white rounded-[5px] px-[15px] ">
           <input
-            className="search-bar"
+            className="search-bar h-[42px] w-[35vw] outline-none p-[10px]  "
             type="text"
             placeholder="Search for restaurants"
             value={searchTxt}
             onChange={(event) => setSearchTxt(event.target.value)}
           />
-          <button className="search-btn" onClick={updateSearchList}>
-            <i className="fa-sharp fa-solid fa-2x fa-magnifying-glass"></i>
+          <button
+            className="search-btn text-gray-400 bg-white border-none"
+            onClick={updateSearchList}
+          >
+            <i className="fa-sharp fa-solid fa-magnifying-glass text-[22px] cursor-pointer"></i>
           </button>
         </div>
       </div>

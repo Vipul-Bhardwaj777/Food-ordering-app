@@ -10,7 +10,8 @@ module.exports = {
         "swiggy-color": "#ffa700",
       },
       fontFamily: {
-        poppins: ["Poppins"],
+        poppins: ["Poppins", "sans-serif"],
+        gothic: ["Dela Gothic One", "cursive"],
       },
     },
   },

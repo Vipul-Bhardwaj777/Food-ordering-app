@@ -5,20 +5,25 @@ import { Link } from "react-router-dom";
 const Header = () => {
   const [Profile, setProfile] = useState("Login");
   return (
-    <nav className="nav-bar flex justify-between h-20 items-center shadow-lg sticky top-0 z-10 bg-white text-mainText-color">
-      <div className="nav-left h-20 flex items-center">
+    <nav className="nav-bar flex-center justify-between h-20  shadow-lg sticky top-0 z-10 bg-white text-mainText-color">
+      
+      <div className="nav-left h-20 flex-center ">
         <Link to="/">
-          <img className="nav-img w-20 ml-4" src={LOGO} />
+          <img className="nav-img w-20 ml-4 " src={LOGO} />
         </Link>
-        <p className="text-[14px] ml-10 font-bold">
-          Palampur, Himachal Pradesh
+        <p className="text-[14px] ml-10 cursor-pointer hover:text-smallText-color transition">
+          <span className="hover:text-swiggy-color border-b-2 border-black font-bold">
+            Palampur
+          </span>
+          , Himachal Pradesh, India
         </p>
       </div>
+
       <div className="nav-right">
         <ul className="nav-list flex text-[16px] gap-[60px] px-8">
           <li>
             <Link
-              className="nav-link items-center gap-3 text-[16px] flex bg-white cursor-pointer w-[77px] text-mainText-color"
+              className="nav-link flex-center hover:text-swiggy-color transition  gap-3 text-[16px]  bg-white cursor-pointer w-[77px] text-mainText-color"
               to="/help"
             >
               <i className="fa-solid fa-comment"></i>
@@ -27,7 +32,7 @@ const Header = () => {
           </li>
           <li>
             <Link
-              className="nav-link items-center gap-3 text-[16px] flex bg-white cursor-pointer w-[77px] text-mainText-color"
+              className="nav-link flex-center hover:text-swiggy-color transition  gap-3 text-[16px]  bg-white cursor-pointer w-[77px] text-mainText-color"
               to="/offers"
             >
               <i className="fa-solid fa-gift"></i>
@@ -36,7 +41,7 @@ const Header = () => {
           </li>
           <li>
             <Link
-              className="nav-link items-center gap-3 text-[16px] flex bg-white cursor-pointer w-[77px] text-mainText-color"
+              className="nav-link flex-center hover:text-swiggy-color transition  gap-3 text-[16px]  bg-white cursor-pointer w-[77px] text-mainText-color"
               onClick={() =>
                 Profile === "Login" ? setProfile("Vipul") : setProfile("Login")
               }
@@ -48,7 +53,7 @@ const Header = () => {
           </li>
           <li>
             <Link
-              className="nav-link items-center gap-3 text-[16px] flex bg-white cursor-pointer w-[77px] text-mainText-color"
+              className="nav-link flex-center hover:text-swiggy-color transition  gap-3 text-[16px]  bg-white cursor-pointer w-[77px] text-mainText-color"
               to="/cart"
             >
               <i className="fa-solid fa-cart-shopping"></i>
