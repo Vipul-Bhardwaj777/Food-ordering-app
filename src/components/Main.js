@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
 import useResListData from "../utils/useResListData";
+import useOnlineStatus from "../utils/useOnlineStatus";
 
 const Main = () => {
   const ResList = useResListData();
@@ -36,6 +37,11 @@ const Main = () => {
     );
     setFilterList(searchFilteredList);
   };
+
+  const onlineStatus = useOnlineStatus();
+  if (onlineStatus === false) {
+    return <h1>You are offline</h1>;
+  }
 
   return ResList.length === 0 ? (
     <Shimmer />
