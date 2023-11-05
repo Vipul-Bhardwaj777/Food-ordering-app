@@ -9,6 +9,9 @@ module.exports = {
         "border-color": "#e9e9eb",
         "swiggy-color": "#ffa700",
       },
+      fontFamily: {
+        poppins: ["Poppins"],
+      },
     },
   },
   plugins: [],

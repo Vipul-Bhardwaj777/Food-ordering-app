@@ -1,9 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
+@layer base {
+  html {
+    font-family: "poppins", sans-serif;
+  }
+}
+
+@layer utilities {
   .flex-center {
     @apply flex items-center;
+  }
+  .container {
+    @apply max-w-[938px] m-auto;
   }
 }
