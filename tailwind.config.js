@@ -8,6 +8,7 @@ module.exports = {
         "smallText-color": "#8b8d97",
         "border-color": "#e9e9eb",
         "swiggy-color": "#ffa700",
+        'shimmer-color': '#d6d8da'
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],

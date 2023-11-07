@@ -18,4 +18,11 @@
   .container {
     @apply max-w-[938px] m-auto;
   }
+
+  .active-filter {
+    @apply bg-[#ddd];
+  }
+  .inactive-filter {
+    @apply bg-white;
+  }
 }

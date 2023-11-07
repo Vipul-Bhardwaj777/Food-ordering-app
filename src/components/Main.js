@@ -47,7 +47,7 @@ const Main = () => {
     <Shimmer />
   ) : (
     <div className="main">
-      <div className="search flex-center flex-col w-[100%] h-[40vh] justify-center bg-[url('https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png')] bg-cover bg-no-repeat mb-8 bg-[center_-8rem] ">
+      <div className="search flex-center flex-col w-full h-[40vh] justify-center bg-[url('https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png')] bg-cover bg-no-repeat mb-8 bg-[center_-8rem] ">
         <div className="search-1 my-[10px] text-center text-white ">
           <h1 className="text-[45px] font-gothic ">Tomato</h1>
           <p className="text-[30px]">Discover the best food & drinks</p>
@@ -70,19 +70,22 @@ const Main = () => {
         </div>
       </div>
 
-      <div className="container res-section">
-        <h2>Restaurants with online food delivery near you</h2>
+      <div className="container res-section mt-8 py-4 ">
+        <h2 className="ml-[15px] mb-[19px] ">
+          Restaurants with online food delivery near you
+        </h2>
 
-        <div className="filter-container">
-          <ul className="filter-list flex">
+        <div className="filter-container py-[3px] mb-[17px] ">
+          <ul className="filter-list flex-center">
             <li>
-              <button className="filter-btns">
-                Filters<i className="fa-solid fa-sliders"></i>
+              <button className="filter-btns text-mainText-color cursor-pointer ml-[15px] rounded-full text-[14px] shadow-lg border border-[rgb(226, 226, 237)] bg-white w-[100px] h-[37px] ">
+                Filters
+                <i className="fa-solid fa-sliders ml-[5px] text-[14px]"></i>
               </button>
             </li>
             <li>
               <button
-                className={`filter-btns ${
+                className={`filter-btns text-mainText-color cursor-pointer ml-[15px] rounded-full text-[14px] shadow-lg border border-[rgb(226, 226, 237)] bg-white w-[100px] h-[37px] ${
                   isActive ? "active-filter" : "inactive-filter"
                 }`}
                 onClick={updateRatingList}
@@ -91,27 +94,39 @@ const Main = () => {
               </button>
             </li>
             <li>
-              <button className="filter-btns">Rating </button>
+              <button className="filter-btns text-mainText-color cursor-pointer ml-[15px] rounded-full text-[14px] shadow-lg border border-[rgb(226, 226, 237)] bg-white w-[100px] h-[37px] ">
+                Rating{" "}
+              </button>
             </li>
             <li>
-              <button className="filter-btns">Rating </button>
+              <button className="filter-btns text-mainText-color cursor-pointer ml-[15px] rounded-full text-[14px] shadow-lg border border-[rgb(226, 226, 237)] bg-white w-[100px] h-[37px] ">
+                Rating{" "}
+              </button>
             </li>
             <li>
-              <button className="filter-btns">Rating </button>
+              <button className="filter-btns text-mainText-color cursor-pointer ml-[15px] rounded-full text-[14px] shadow-lg border border-[rgb(226, 226, 237)] bg-white w-[100px] h-[37px] ">
+                Rating{" "}
+              </button>
             </li>
             <li>
-              <button className="filter-btns">Rating </button>
+              <button className="filter-btns text-mainText-color cursor-pointer ml-[15px] rounded-full text-[14px] shadow-lg border border-[rgb(226, 226, 237)] bg-white w-[100px] h-[37px] ">
+                Rating{" "}
+              </button>
             </li>
             <li>
-              <button className="filter-btns">Rating </button>
+              <button className="filter-btns text-mainText-color cursor-pointer ml-[15px] rounded-full text-[14px] shadow-lg border border-[rgb(226, 226, 237)] bg-white w-[100px] h-[37px] ">
+                Rating{" "}
+              </button>
             </li>
             <li>
-              <button className="filter-btns">Rating </button>
+              <button className="filter-btns text-mainText-color cursor-pointer ml-[15px] rounded-full text-[14px] shadow-lg border border-[rgb(226, 226, 237)] bg-white w-[100px] h-[37px] ">
+                Rating{" "}
+              </button>
             </li>
           </ul>
         </div>
 
-        <div className="card-section flex">
+        <div className="card-section flex-center flex-wrap">
           {filterList.map((restaurant) => (
             <Link
               className="card-link"
