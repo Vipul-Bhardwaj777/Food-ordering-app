@@ -12,13 +12,15 @@ const ResCard = (props) => {
         src={CLOUDINARY_CDN + cloudinaryImageId}
       />
       <div className="card-text pl-[11px]">
-        <h3 className="card-name text-[18px] text-mainText-color whitespace-nowrap w-[90%] overflow-hidden overflow-ellipsis ">
+        <h3 className="card-name text-[18px] font-semibold text-mainText-color whitespace-nowrap w-[90%] overflow-hidden overflow-ellipsis ">
           {name}
         </h3>
 
         <div className="rating flex-center gap-1 ">
-          <img className="rating-img w-[14px]" src={STAR} />
-          <small className="text-mainText-color text-[16px]">{avgRating}</small>
+          <img className="rating-img  w-[14px]" src={STAR} />
+          <small className="text-mainText-color font-semibold  text-[16px]">
+            {avgRating}
+          </small>
         </div>
         <p className="cuisines text-smallText-color text-[14px] whitespace-nowrap w-[90%] overflow-hidden overflow-ellipsis">
           {cuisines.join(", ")}

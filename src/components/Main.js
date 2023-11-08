@@ -71,7 +71,7 @@ const Main = () => {
       </div>
 
       <div className="container res-section mt-8 py-4 ">
-        <h2 className="ml-[15px] mb-[19px] ">
+        <h2 className="ml-[15px] mb-[19px] text-[24px] font-semibold ">
           Restaurants with online food delivery near you
         </h2>
 

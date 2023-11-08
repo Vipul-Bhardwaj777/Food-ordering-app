@@ -6,30 +6,43 @@ const SmallItem = ({ info }) => {
   const { name, price, itemAttribute, description, imageId } = info;
 
   return (
-    <div className="small-itemMain flex">
-      <div className="smallItem-left">
-        {itemAttribute?.vegClassifier === "VEG" ? (
-          <img className="veg-nonveg" src={VEG} />
-        ) : (
-          <img className="veg-nonveg" src={NON_VEG} />
-        )}
-        <h4>{name}</h4>
+    <div className="small-itemMain flex-center border-b border-dotted border-smallText-color justify-between gap-5 pb-5 w-full ">
 
-        <p>₹ {price / 100}</p>
+      <div className="smallItem-left max-w-[632px] ">
+        {itemAttribute?.vegClassifier === "VEG" ? (
+          <img className="veg-nonveg h-4 w-[14px] mb-1 " src={VEG} />
+        ) : (
+          <img className="veg-nonveg h-4 w-[14px] mb-1 " src={NON_VEG} />
+        )}
+        <h4 className="text-mainText-color font-medium text-[17px] mb-1 ">{name}</h4>
+
+        <p className="text-mainText-color text-[14px] mb-[14px] ">
+          ₹ {price / 100}
+        </p>
         {description != null ? (
-          <small>{description}</small>
+          <small className="text-smallText-color text-[12px] font-extralight ">
+            {description}
+          </small>
         ) : (
           <div className="desc-spacer"></div>
         )}
       </div>
 
-      <div className="smallItem-right">
+      <div className="smallItem-right w-[118px]">
         {imageId != null ? (
-          <img className="item-img" src={MENU_CARD_IMGID + imageId} />
+          <img
+            className="item-img h-[96px] w-[118px] rounded-md shadow-md cursor-pointer "
+            src={MENU_CARD_IMGID + imageId}
+          />
         ) : (
-          <img className="item-img" src={DUMMY_IMG} />
+          <img
+            className="item-img h-[96px] w-[118px] rounded-md shadow-md cursor-pointer "
+            src={DUMMY_IMG}
+          />
         )}
-        <button className="addTo-cart">ADD</button>
+        <button className="addTo-cart w-[94px] h-9 text-[#3d9b6d] font-bold bg-white hover:shadow-md border border-border-color rounded-md relative top-0 cursor-pointer ml-[10px] ">
+          ADD
+        </button>
       </div>
     </div>
   );
