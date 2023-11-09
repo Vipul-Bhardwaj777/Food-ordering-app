@@ -1,4 +1,4 @@
-import ResCard from "./ResCard";
+import ResCard, { withPromoted } from "./ResCard";
 import { useEffect, useState } from "react";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
@@ -42,6 +42,8 @@ const Main = () => {
   if (onlineStatus === false) {
     return <h1>You are offline</h1>;
   }
+
+  const ResCardPromoted = withPromoted(ResCard);
 
   return ResList.length === 0 ? (
     <Shimmer />

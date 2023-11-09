@@ -8,7 +8,7 @@ const ResCard = (props) => {
   return (
     <div className="res-card w-[200px] h-60 m-[15px] cursor-pointer transition-all duration-200 ease-linear hover:scale-[0.9] ">
       <img
-        className="res-img w-full h-[135px] rounded-[20px] "
+        className="res-img w-full h-[135px] rounded-[20px]   "
         src={CLOUDINARY_CDN + cloudinaryImageId}
       />
       <div className="card-text pl-[11px]">
@@ -31,6 +31,19 @@ const ResCard = (props) => {
       </div>
     </div>
   );
+};
+
+export const withPromoted = (ResCard) => {
+  return (props) => {
+    return (
+      <div className="ptomoted-main relative">
+        <label className="absolute bg-mainText-color text-white p-1 text-[11px] left-2 rounded-sm ">
+          Promoted
+        </label>
+        <ResCard {...props} />
+      </div>
+    );
+  };
 };
 
 export default ResCard;

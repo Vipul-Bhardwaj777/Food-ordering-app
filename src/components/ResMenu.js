@@ -29,6 +29,16 @@ const ResMenu = () => {
   const { offers } = infoWithStyles;
 
   const { cards } = menuData?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR;
+
+  const filterCards = cards.filter(
+    (item) =>
+      item?.card?.card?.["@type"] ===
+      "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory"
+  );
+  console.log(cards);
+
+  console.log(filterCards);
+
   return (
     <div className="menu-main">
       <div className="menu-container w-[800px] mx-auto px-4 ">
@@ -43,7 +53,9 @@ const ResMenu = () => {
         </div>
         <div className="top-section flex-center h-[83px] mb-[18px] justify-between ">
           <div className="top-info">
-            <h2 className="text-[20px] font-bold text-mainText-color ">{name}</h2>
+            <h2 className="text-[20px] font-bold text-mainText-color ">
+              {name}
+            </h2>
             <p className="text-[13px] text-smallText-color">
               {cuisines.join(", ")}
             </p>
@@ -89,7 +101,7 @@ const ResMenu = () => {
         <div className="veg-filter flex-center text-[14px] mb-6 gap-3 ">
           <p className="mb-[3px] text-[15px] font-bold">Veg Only</p>
           <div className="veg-filterBtn">
-            <label class="relative inline-flex items-center cursor-pointer mt-[3px] ">
+            <label className="relative inline-flex items-center cursor-pointer mt-[3px] ">
               <input
                 type="checkbox"
                 value=""
@@ -106,18 +118,16 @@ const ResMenu = () => {
         <hr className="hr-veg border-t border-dotted border-smallText-color mb-[18px]"></hr>
 
         <div className="items-container">
-          {cards.map((nextCard, id) => {
-            const itemCards = nextCard?.card?.card?.itemCards;
-            if (itemCards === undefined) {
-              return <div key={id}></div>;
-            }
+          {filterCards.map((item, id) => {
+            const itemCards = item?.card?.card?.itemCards;
+
             const itemCardList = veg
-              ? nextCard?.card?.card?.itemCards.filter(
+              ? item?.card?.card?.itemCards.filter(
                   (item) =>
                     item?.card?.info?.itemAttribute?.vegClassifier === "VEG"
                 )
-              : nextCard?.card?.card?.itemCards;
-            const title = nextCard?.card?.card?.title;
+              : item?.card?.card?.itemCards;
+            const title = item?.card?.card?.title;
             if (itemCardList === undefined || itemCardList.length === 0) {
               return <div key={id}></div>;
             } else {
