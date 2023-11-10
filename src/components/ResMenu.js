@@ -8,6 +8,7 @@ import useMenuData from "../utils/useMenuData";
 const ResMenu = () => {
   const { resId } = useParams();
   const menuData = useMenuData(resId);
+  const [ActiveIndex, setActiveIndex] = useState(0);
 
   const [veg, setVeg] = useState(false);
 
@@ -118,9 +119,7 @@ const ResMenu = () => {
         <hr className="hr-veg border-t border-dotted border-smallText-color mb-[18px]"></hr>
 
         <div className="items-container">
-          {filterCards.map((item, id) => {
-            const itemCards = item?.card?.card?.itemCards;
-
+          {filterCards.map((item, index) => {
             const itemCardList = veg
               ? item?.card?.card?.itemCards.filter(
                   (item) =>
@@ -129,14 +128,20 @@ const ResMenu = () => {
               : item?.card?.card?.itemCards;
             const title = item?.card?.card?.title;
             if (itemCardList === undefined || itemCardList.length === 0) {
-              return <div key={id}></div>;
+              return <div key={index}></div>;
             } else {
               return (
                 <MenuCard
-                  key={id}
+                  key={index}
                   itemProp={{
                     itemCardList,
                     title,
+                    showItems: index === ActiveIndex,
+                    setActiveIndex: () => {
+                      setActiveIndex((currActiveIndex) =>
+                        currActiveIndex === index ? null : index
+                      );
+                    },
                   }}
                 />
               );
