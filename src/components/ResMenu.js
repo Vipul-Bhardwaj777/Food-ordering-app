@@ -27,7 +27,6 @@ const ResMenu = () => {
 
   const infoWithStyles =
     menuData?.cards[1]?.card?.card?.gridElements?.infoWithStyle;
-  const { offers } = infoWithStyles;
 
   const { cards } = menuData?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR;
 
@@ -36,9 +35,7 @@ const ResMenu = () => {
       item?.card?.card?.["@type"] ===
       "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory"
   );
-  console.log(cards);
-
-  console.log(filterCards);
+  console.log(menuData);
 
   return (
     <div className="menu-main">
@@ -94,7 +91,7 @@ const ResMenu = () => {
         </div>
 
         <div className="offer-cards flex-center gap-3 h-[73px] mb-[50px] overflow-hidden ">
-          {offers.map((offer, offerIds) => (
+          {infoWithStyles?.offers.map((offer, offerIds) => (
             <OfferCard offerData={offer} key={offerIds} />
           ))}
         </div>

@@ -8,15 +8,27 @@ import HelpPage from "./components/HelpPage";
 import CartPage from "./components/CartPage";
 import ResMenu from "./components/ResMenu";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
+import userContext from "./utils/userContext";
+import useLoginData from "./utils/useLoginData";
+import appStore from "./utils/appStore";
+import { Provider } from "react-redux";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-const AppLayout = () => (
-  <div className="app">
-    <Header />
-    <Outlet />
-  </div>
-);
+const AppLayout = () => {
+  const userName = useLoginData();
+
+  return (
+    <Provider store={appStore}>
+      <div className="app">
+        <userContext.Provider value={{ loginUser: userName }}>
+          <Header />
+        </userContext.Provider>
+        <Outlet />
+      </div>
+    </Provider>
+  );
+};
 
 const appRouter = createBrowserRouter([
   {

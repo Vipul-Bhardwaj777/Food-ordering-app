@@ -1,12 +1,13 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { LOGO } from "../utils/constants";
 import { Link } from "react-router-dom";
+import userContext from "../utils/userContext";
 
 const Header = () => {
   const [Profile, setProfile] = useState("Login");
+  const { loginUser } = useContext(userContext);
   return (
     <nav className="nav-bar flex-center justify-between h-20  shadow-lg sticky top-0 z-10 bg-white text-mainText-color">
-      
       <div className="nav-left h-20 flex-center ">
         <Link to="/">
           <img className="nav-img w-20 ml-4 " src={LOGO} />
@@ -43,7 +44,9 @@ const Header = () => {
             <Link
               className="nav-link flex-center hover:text-swiggy-color transition  gap-3 text-[16px]  bg-white cursor-pointer w-[77px] text-mainText-color"
               onClick={() =>
-                Profile === "Login" ? setProfile("Vipul") : setProfile("Login")
+                Profile === "Login"
+                  ? setProfile(`${loginUser}`)
+                  : setProfile("Login")
               }
             >
               <i className="fa-solid fa-user"></i>
