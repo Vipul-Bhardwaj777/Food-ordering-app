@@ -5,7 +5,7 @@ import Main from "./components/Main";
 import OfferPage from "./components/OfferPage";
 import ErrorPage from "./components/ErrorPage";
 import HelpPage from "./components/HelpPage";
-import CartPage from "./components/CartPage";
+import CarttPage from "./components/CarttPage";
 import ResMenu from "./components/ResMenu";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import userContext from "./utils/userContext";
@@ -49,7 +49,7 @@ const appRouter = createBrowserRouter([
       },
       {
         path: "/cart",
-        element: <CartPage />,
+        element: <CarttPage />,
       },
       {
         path: "/restaurant/:resId",

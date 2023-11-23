@@ -1,20 +1,29 @@
+import { useDispatch } from "react-redux";
 import { MENU_CARD_IMGID } from "../utils/constants";
 import { VEG } from "../utils/constants";
 import { NON_VEG } from "../utils/constants";
 import { DUMMY_IMG } from "../utils/constants";
+import { addItem } from "../utils/cartSlice";
+
 const SmallItem = ({ info }) => {
   const { name, price, itemAttribute, description, imageId } = info;
+  const dispatch = useDispatch();
+
+  const HandleAddItem = () => {
+    dispatch(addItem(info));
+  };
 
   return (
     <div className="small-itemMain flex-center border-b border-dotted border-smallText-color justify-between gap-5 pb-5 w-full ">
-
       <div className="smallItem-left max-w-[632px] ">
         {itemAttribute?.vegClassifier === "VEG" ? (
           <img className="veg-nonveg h-4 w-[14px] mb-1 " src={VEG} />
         ) : (
           <img className="veg-nonveg h-4 w-[14px] mb-1 " src={NON_VEG} />
         )}
-        <h4 className="text-mainText-color font-medium text-[17px] mb-1 ">{name}</h4>
+        <h4 className="text-mainText-color font-medium text-[17px] mb-1 ">
+          {name}
+        </h4>
 
         <p className="text-mainText-color text-[14px] mb-[14px] ">
           ₹ {price / 100}
@@ -40,7 +49,10 @@ const SmallItem = ({ info }) => {
             src={DUMMY_IMG}
           />
         )}
-        <button className="addTo-cart w-[94px] h-9 text-[#3d9b6d] font-bold bg-white hover:shadow-md border border-border-color rounded-md relative top-0 cursor-pointer ml-[10px] ">
+        <button
+          className="addTo-cart text-[12px] w-[94px] h-9 text-[#3d9b6d] font-bold bg-white hover:shadow-md border border-border-color rounded-md relative top-0 cursor-pointer ml-[10px] "
+          onClick={HandleAddItem}
+        >
           ADD
         </button>
       </div>
