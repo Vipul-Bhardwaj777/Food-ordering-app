@@ -23,7 +23,7 @@ const Main = () => {
       setIsActive(false);
     } else {
       const filteredList = ResList.filter(
-        (restaurant) => restaurant?.info?.avgRating > 4
+        (restaurant) => restaurant?.info?.avgRating > 4.3
       );
       setFilterList(filteredList);
       setFilter(!filter);
@@ -36,6 +36,7 @@ const Main = () => {
       restaurant?.info?.name?.toLowerCase().includes(searchTxt.toLowerCase())
     );
     setFilterList(searchFilteredList);
+    setSearchTxt("");
   };
 
   const onlineStatus = useOnlineStatus();

@@ -63,7 +63,7 @@ const Header = () => {
               to="/cart"
             >
               <i className="fa-solid fa-cart-shopping"></i>
-              Cart({cartItems.length})
+              Cart ({cartItems.length})
             </Link>
           </li>
         </ul>

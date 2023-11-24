@@ -1,15 +1,24 @@
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import CartRight from "./CartRight";
 import EmptyCart from "./EmptyCart";
 import { DUMMY_IMG } from "../utils/constants";
+import { clearCart } from "../utils/cartSlice";
 
 const CarttPage = () => {
   const cartItems = useSelector((store) => store.cart.items);
+  const sum = cartItems.reduce(
+    (acc, curr) => (acc += (curr.price * curr.quantity) / 100),
+    0
+  );
+  const dispatch = useDispatch();
+  const HandleClear = () => {
+    dispatch(clearCart());
+  };
 
   return cartItems.length === 0 ? (
     <EmptyCart />
   ) : (
-    <div className="cart-main bg-[#e9ecee] h-full w-full flex-center justify-around ">
+    <div className="cart-main  bg-[#e9ecee] h-full w-full flex-center justify-around ">
       <div className="cart-left h-[508px] w-[779px] relative mt-[31px]">
         <div className="address h-[396px] mb-5 bg-white shadow-sm px-10 py-9 ">
           <div className="location shadow-md absolute h-10 w-10 bg-[#282c3f] flex-center justify-center -left-5">
@@ -44,18 +53,68 @@ const CarttPage = () => {
         </div>
       </div>
 
-      <div className="cart-right w-[366px] h-[508px]    mt-[31px] bg-white shadow-sm">
-        <div className="right-top">
-          <img
-            className="item-img h-[50px] w-[50px] rounded-md shadow-md cursor-pointer "
-            src={DUMMY_IMG}
-          />
-          <h1>Enjoy Your Food</h1>
+      <div className="cart-right ">
+        <div className="cart-rightTop overflow-scroll scrollbar-hidden relative w-[366px] h-[448px]   mt-[31px] bg-white shadow-sm px-[30px] py-5 ">
+          <div className="right-top flex-center w-[242px] h-[64px] gap-[14px] ">
+            <img
+              className="item-img h-[50px] w-[50px] rounded-md shadow-md cursor-pointer "
+              src={DUMMY_IMG}
+            />
+            <div className="top-text">
+              <h1 className="text-[17px] font-medium ">Just One Step Away</h1>
+              <p className="text-[13px] text-smallText-color ">
+                Enjoy your food
+              </p>
+            </div>
+          </div>
+
+          <div className="right-items flex flex-col gap-3 mt-[20px] mb-[15px]">
+            {cartItems.map((items, id) => (
+              <CartRight key={id} info={items} />
+            ))}
+          </div>
+
+          <div className="feedback">
+            <input
+              type="text"
+              className="  w-[289px] h-[51px] bg-[#f9f9f9] text-[12px] p-4 mb-[15px] outline-none "
+              placeholder=" Any suggestions? We will pass it on..."
+            />
+          </div>
+          <div className="delivery cursor-pointer  hover:shadow-md border border-smallText-color h-[95px] w-[289px] pl-[30px] py-[6px] mb-[10px] relative">
+            <input
+              className=" cursor-pointer absolute left-[5px] top-3"
+              type="checkbox"
+              name=""
+              id=""
+            />{" "}
+            <div>
+              <h1 className="text-[13px] font-medium ">
+                Opt in for NO-contact Delivery
+              </h1>
+              <p className="text-[12px] text-smallText-color ">
+                Unwell, or avoiding contact? Please select no-contact delivery.
+                Partner will safely place the order outside your door.
+              </p>
+            </div>
+          </div>
+
+          <div className="coupon hover:shadow-md  cursor-pointer h-[55px] w-[289px] p-[16px] flex-center gap-4 border-dotted border border-black text-[#535665]">
+            <i className="fa-solid fa-percent text-[13px] "></i>
+            <h1 className="text-[14px] font-medium ">Apply Coupon</h1>
+          </div>
         </div>
 
-        {cartItems.map((items, id) => (
-          <CartRight key={id} info={items} />
-        ))}
+        <div className="pay p-[30px]  w-[366px] h-[60px] flex-center justify-between font-bold  bg-white shadow-lg  ">
+          <h1>TO PAY</h1>
+          <button
+            className="text-[14px] w-[100px] h-[30px] bg-white border-[1.5px] border-[#60b246] text-[#60b246] font-semibold hover:shadow-md"
+            onClick={HandleClear}
+          >
+            Clear Cart
+          </button>
+          <h1>₹{sum.toFixed(2)}</h1>
+        </div>
       </div>
     </div>
   );

@@ -1,16 +1,31 @@
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { MENU_CARD_IMGID } from "../utils/constants";
 import { VEG } from "../utils/constants";
 import { NON_VEG } from "../utils/constants";
 import { DUMMY_IMG } from "../utils/constants";
-import { addItem } from "../utils/cartSlice";
+import { addItem, removeItem } from "../utils/cartSlice";
+import { useState } from "react";
+import { useEffect } from "react";
 
 const SmallItem = ({ info }) => {
   const { name, price, itemAttribute, description, imageId } = info;
-  const dispatch = useDispatch();
+  const cartItems = useSelector((state) => state.cart.items);
 
-  const HandleAddItem = () => {
+  const dispatch = useDispatch();
+  const [quant, setQuant] = useState("");
+  useEffect(() => {
+    const cartItem = cartItems.find((item) => item.id === info.id);
+
+    setQuant(cartItem ? `( ${cartItem.quantity} )` : "");
+  }, [cartItems]);
+
+  const HandleAddItem = (e) => {
+    e.preventDefault();
     dispatch(addItem(info));
+  };
+  const HandleRemoveItem = (e) => {
+    e.preventDefault();
+    dispatch(removeItem(info.id));
   };
 
   return (
@@ -49,12 +64,27 @@ const SmallItem = ({ info }) => {
             src={DUMMY_IMG}
           />
         )}
-        <button
-          className="addTo-cart text-[12px] w-[94px] h-9 text-[#3d9b6d] font-bold bg-white hover:shadow-md border border-border-color rounded-md relative top-0 cursor-pointer ml-[10px] "
-          onClick={HandleAddItem}
-        >
-          ADD
-        </button>
+        <div className="addTo-cart flex-center justify-between text-[12px] w-[120px] h-9 text-[#3d9b6d] font-bold bg-white hover:shadow-md border border-border-color rounded-md relative top-0 cursor-pointer p-2  ">
+          <button
+            className="addTo-cart text-[12px] w-[20x] h-[14px] text-[#3d9b6d] font-bold bg-white rounded-sm relative top-0 cursor-pointer   "
+            onClick={HandleRemoveItem}
+          >
+            -
+          </button>
+          <button
+            className="addTo-cart text-[12px] w-[20x] h-[14px] text-[#3d9b6d] font-bold bg-white rounded-sm relative top-0 cursor-pointer   "
+            onClick={HandleAddItem}
+          >
+            ADD {quant}
+          </button>
+
+          <button
+            className="addTo-cart text-[12px] w-[20x] h-[14px] text-[#3d9b6d] font-bold bg-white rounded-sm relative top-0 cursor-pointer  "
+            onClick={HandleAddItem}
+          >
+            +
+          </button>
+        </div>
       </div>
     </div>
   );
