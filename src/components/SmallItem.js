@@ -64,22 +64,22 @@ const SmallItem = ({ info }) => {
             src={DUMMY_IMG}
           />
         )}
-        <div className="addTo-cart flex-center justify-between text-[12px] w-[120px] h-9 text-[#3d9b6d] font-bold bg-white hover:shadow-md border border-border-color rounded-md relative top-0 cursor-pointer p-2  ">
+        <div className="addTo-cart flex-center justify-between text-[12px] w-[120px] h-9 text-[#3d9b6d] font-bold bg-white hover:shadow-md border border-border-color rounded-md relative top-0 cursor-pointer   ">
           <button
-            className="addTo-cart text-[12px] w-[20x] h-[14px] text-[#3d9b6d] font-bold bg-white rounded-sm relative top-0 cursor-pointer   "
+            className="addTo-cart  text-[12px] w-6 h-9  text-[#3d9b6d] font-bold bg-white rounded-sm relative top-0 cursor-pointer   "
             onClick={HandleRemoveItem}
           >
             -
           </button>
           <button
-            className="addTo-cart text-[12px] w-[20x] h-[14px] text-[#3d9b6d] font-bold bg-white rounded-sm relative top-0 cursor-pointer   "
+            className="addTo-cart  text-[12px] w-14 h-9  text-[#3d9b6d] font-bold bg-white rounded-sm relative top-0 cursor-pointer   "
             onClick={HandleAddItem}
           >
             ADD {quant}
           </button>
 
           <button
-            className="addTo-cart text-[12px] w-[20x] h-[14px] text-[#3d9b6d] font-bold bg-white rounded-sm relative top-0 cursor-pointer  "
+            className="addTo-cart text-[12px]  w-8 h-9  text-[#3d9b6d] font-bold bg-white rounded-sm relative top-0 cursor-pointer  "
             onClick={HandleAddItem}
           >
             +
