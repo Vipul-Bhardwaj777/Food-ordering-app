@@ -4,6 +4,8 @@ import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
 import useResListData from "../utils/useResListData";
 import useOnlineStatus from "../utils/useOnlineStatus";
+import Footer from "./Footer";
+import OfflinePage from "./OfflinePage";
 
 const Main = () => {
   const ResList = useResListData();
@@ -41,7 +43,7 @@ const Main = () => {
 
   const onlineStatus = useOnlineStatus();
   if (onlineStatus === false) {
-    return <h1>You are offline</h1>;
+    return <OfflinePage />;
   }
 
   const ResCardPromoted = withPromoted(ResCard);
@@ -129,7 +131,7 @@ const Main = () => {
           </ul>
         </div>
 
-        <div className="card-section flex-center flex-wrap">
+        <div className="card-section flex-center flex-wrap mb-[98px]">
           {filterList.map((restaurant) => (
             <Link
               className="card-link"
@@ -140,6 +142,10 @@ const Main = () => {
             </Link>
           ))}
         </div>
+      </div>
+
+      <div className="footer">
+        <Footer />
       </div>
     </div>
   );
