@@ -1,6 +1,6 @@
 import { useContext, useState } from "react";
 import { LOGO } from "../utils/constants";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import userContext from "../utils/userContext";
 import { useSelector } from "react-redux";
 
@@ -8,6 +8,7 @@ const Header = () => {
   const [Profile, setProfile] = useState("Login");
   const { loginUser } = useContext(userContext);
   const cartItems = useSelector((store) => store.cart.items);
+  const location = useLocation();
 
   return (
     <nav className="nav-bar flex-center justify-between h-20  shadow-lg sticky top-0 z-10 bg-white text-mainText-color  ">
@@ -27,7 +28,9 @@ const Header = () => {
         <ul className="nav-list flex text-[16px] gap-[60px] px-8">
           <li>
             <Link
-              className="nav-link font-medium flex-center hover:text-swiggy-color transition  gap-3 text-[16px]  bg-white cursor-pointer w-[77px] text-mainText-color"
+              className={`nav-link font-medium flex-center hover:text-swiggy-color transition  gap-3 text-[16px]  bg-white cursor-pointer w-[77px] text-mainText-color ${
+                location.pathname === "/help" ? "active-link" : ""
+              }`}
               to="/help"
             >
               <i className="fa-solid fa-comment"></i>
@@ -36,7 +39,9 @@ const Header = () => {
           </li>
           <li>
             <Link
-              className="nav-link font-medium flex-center hover:text-swiggy-color transition  gap-3 text-[16px]  bg-white cursor-pointer w-[77px] text-mainText-color"
+              className={`nav-link font-medium flex-center hover:text-swiggy-color transition  gap-3 text-[16px]  bg-white cursor-pointer w-[77px] text-mainText-color ${
+                location.pathname === "/offers" ? "active-link" : ""
+              }`}
               to="/offers"
             >
               <i className="fa-solid fa-gift"></i>
@@ -45,7 +50,9 @@ const Header = () => {
           </li>
           <li>
             <Link
-              className="nav-link font-medium flex-center hover:text-swiggy-color transition  gap-3 text-[16px]  bg-white cursor-pointer w-[77px] text-mainText-color"
+              className={`nav-link font-medium flex-center hover:text-swiggy-color transition  gap-3 text-[16px]  bg-white cursor-pointer w-[77px] text-mainText-color ${
+                location.pathname === "/" ? "active-link" : ""
+              }`}
               onClick={() =>
                 Profile === "Login"
                   ? setProfile(`${loginUser}`)
@@ -59,7 +66,9 @@ const Header = () => {
           </li>
           <li>
             <Link
-              className="nav-link font-medium flex-center hover:text-swiggy-color transition  gap-3 text-[16px]  bg-white cursor-pointer text-mainText-color"
+              className={`nav-link font-medium flex-center hover:text-swiggy-color transition  gap-3 text-[16px]  bg-white cursor-pointer  text-mainText-color ${
+                location.pathname === "/cart" ? "active-link" : ""
+              }`}
               to="/cart"
             >
               <i className="fa-solid fa-cart-shopping"></i>

@@ -10,7 +10,6 @@ import OfflinePage from "./OfflinePage";
 const OfferPage = () => {
   const ResList = useResListData();
   const [filterList, setFilterList] = useState([]);
-  const [searchTxt, setSearchTxt] = useState("");
   const [filter, setFilter] = useState(false);
   const [isActive, setIsActive] = useState(false);
 

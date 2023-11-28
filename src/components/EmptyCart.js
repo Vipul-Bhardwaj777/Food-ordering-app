@@ -9,7 +9,7 @@ const EmptyCart = () => {
       <h2 className="text-[14px] text-smallText-color mb-[30px] ">
         You can go to home page to view more restaurants
       </h2>
-      <Link to="/">
+      <Link to="/offers">
         <button className="text-[15px] text-white w-[255px] h-10 bg-[#fc8019] font-bold py-[11px] px-5 hover:shadow-lg">
           SEE RESTAURANTS NEAR YOU
         </button>

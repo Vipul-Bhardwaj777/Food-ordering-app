@@ -20,10 +20,11 @@
   }
 
   .active-filter {
-    @apply bg-[#ddd];
+    @apply bg-[rgb(221,221,221)];
   }
-  .inactive-filter {
-    @apply bg-white;
+
+  .active-link {
+    @apply text-swiggy-color;
   }
 }
 

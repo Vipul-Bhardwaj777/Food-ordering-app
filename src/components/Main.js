@@ -91,7 +91,7 @@ const Main = () => {
             <li>
               <button
                 className={`filter-btns text-mainText-color cursor-pointer ml-[15px] rounded-full text-[14px] shadow-lg border border-[rgb(226, 226, 237)] bg-white w-[100px] h-[37px] ${
-                  isActive ? "active-filter" : "inactive-filter"
+                  isActive ? "active-filter" : ""
                 }`}
                 onClick={updateRatingList}
               >
