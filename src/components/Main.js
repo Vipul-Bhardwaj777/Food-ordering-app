@@ -7,6 +7,7 @@ import useOnlineStatus from "../utils/useOnlineStatus";
 import Footer from "./Footer";
 import OfflinePage from "./OfflinePage";
 
+
 const Main = () => {
   const ResList = useResListData();
   const [filterList, setFilterList] = useState([]);
