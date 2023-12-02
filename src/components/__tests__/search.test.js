@@ -28,10 +28,7 @@ it("Should render Main component with search", async () => {
   const searchbtn = screen.getByTestId("searchBtn");
   fireEvent.click(searchbtn);
 
-  await waitFor(() => {
-    const cards = screen.getAllByTestId("resCard");
-    console.log(cards);
+  const cards = screen.getAllByTestId("resCard");
 
-    expect(cards.length).toBe(1);
-  });
+  expect(cards.length).toBe(1);
 });
