@@ -13,7 +13,7 @@ global.fetch = jest.fn(() => {
   });
 });
 
-it("Should render Main component with search", async () => {
+it("Should search resList for KFC ", async () => {
   await act(async () => {
     render(
       <BrowserRouter>
@@ -28,7 +28,7 @@ it("Should render Main component with search", async () => {
   const searchbtn = screen.getByTestId("searchBtn");
   fireEvent.click(searchbtn);
 
-  const cards = screen.getAllByTestId("resCard");
+  const cards = screen.getAllByTestId("resCard"); // 9 cards total
 
   expect(cards.length).toBe(1);
 });
