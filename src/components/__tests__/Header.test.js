@@ -36,5 +36,9 @@ describe("Header component test cases", () => {
     const logoutBtn = screen.getByText("Guest");
 
     expect(logoutBtn).toBeInTheDocument;
+
+    fireEvent.click(logoutBtn);
+
+    expect(loginBtn).toBeInTheDocument;
   });
 });

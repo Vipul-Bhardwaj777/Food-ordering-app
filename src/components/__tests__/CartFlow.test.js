@@ -89,4 +89,24 @@ describe("Cart flow test cases", () => {
 
     expect(cartItems.length).toBe(1);
   });
+
+  it("Should clear the CartPage", async () => {
+    await act(async () => {
+      render(
+        <BrowserRouter>
+          <Provider store={appStore}>
+            <ResMenu />
+            <CarttPage />
+          </Provider>
+        </BrowserRouter>
+      );
+    });
+
+    const clearCart = screen.getByRole("button", { name: "Clear Cart" });
+    fireEvent.click(clearCart);
+
+    const emptyHeading = screen.getByText("Yout cart is empty");
+
+    expect(emptyHeading).toBeInTheDocument();
+  });
 });
