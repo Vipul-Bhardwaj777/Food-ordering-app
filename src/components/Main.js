@@ -96,8 +96,9 @@ const Main = () => {
                   isActive ? "active-filter" : ""
                 }`}
                 onClick={updateRatingList}
+                data-testid="filterBtn"
               >
-                Rating 4.0+
+                Rating 4.3+
               </button>
             </li>
             <li>

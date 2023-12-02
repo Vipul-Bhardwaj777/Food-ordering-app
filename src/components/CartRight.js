@@ -14,7 +14,7 @@ const CartRight = ({ info }) => {
   };
 
   return (
-    <div className="cart-rightMain ">
+    <div className="cart-rightMain " data-testid="cartItems">
       <div className="small  flex-center justify-between w-[289px] h-[51px]  py-[10px] ">
         <div className="first flex   gap-[10px]">
           {itemAttribute?.vegClassifier === "VEG" ? (
@@ -30,15 +30,20 @@ const CartRight = ({ info }) => {
           <button
             className="remove text-smallText-color h-[30px] w-[22px]  text-[12px] cursor-pointer "
             onClick={HandleRemove}
+            data-testid="cartRightRemoveBtn"
           >
             -
           </button>
-          <div className="count h-[30px] w-[22px]  text-[12px] flex items-center justify-center ">
+          <div
+            className="count h-[30px] w-[22px]  text-[12px] flex items-center justify-center "
+            data-testid="CartItemQuant"
+          >
             {quantity}
           </div>
           <button
             className="add cursor-pointer h-[30px] w-[22px]  text-[12px] "
             onClick={HandleAdd}
+            data-testid="cartRightAddBtn"
           >
             +
           </button>

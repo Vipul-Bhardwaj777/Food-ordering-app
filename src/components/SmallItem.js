@@ -68,12 +68,15 @@ const SmallItem = ({ info }) => {
           <button
             className="addTo-cart  text-[12px] w-6 h-9  text-[#3d9b6d] font-bold bg-white rounded-sm relative top-0 cursor-pointer   "
             onClick={HandleRemoveItem}
+            data-testid="removeBtn"
+
           >
             -
           </button>
           <button
             className="addTo-cart  text-[12px] w-14 h-9  text-[#3d9b6d] font-bold bg-white rounded-sm relative top-0 cursor-pointer   "
             onClick={HandleAddItem}
+            data-testid="addBtn"
           >
             ADD {quant}
           </button>
