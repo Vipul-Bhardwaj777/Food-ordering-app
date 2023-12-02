@@ -7,7 +7,6 @@ import useOnlineStatus from "../utils/useOnlineStatus";
 import Footer from "./Footer";
 import OfflinePage from "./OfflinePage";
 
-
 const Main = () => {
   const ResList = useResListData();
   const [filterList, setFilterList] = useState([]);
@@ -65,11 +64,13 @@ const Main = () => {
             type="text"
             placeholder="Search for restaurants"
             value={searchTxt}
+            data-testid="searchInput"
             onChange={(event) => setSearchTxt(event.target.value)}
           />
           <button
             className="search-btn text-gray-400 bg-white border-none"
             onClick={updateSearchList}
+            data-testid="searchBtn"
           >
             <i className="fa-sharp fa-solid fa-magnifying-glass text-[22px] cursor-pointer"></i>
           </button>

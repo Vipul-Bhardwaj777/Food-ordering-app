@@ -1,0 +1,80 @@
+{
+  "info": {
+    "id": "65797",
+    "name": "Leon's - Burgers & Wings (Leon Grill)",
+    "cloudinaryImageId": "r4ufflqojich0r29efvc",
+    "locality": "Koramangala",
+    "areaName": "Koramangala",
+    "costForTwo": "₹300 for two",
+    "cuisines": ["American", "Snacks", "Turkish", "Portuguese", "Continental"],
+    "avgRating": 4.3,
+    "feeDetails": {
+      "restaurantId": "65797",
+      "fees": [
+        {
+          "name": "BASE_DISTANCE",
+          "fee": 3200
+        },
+        {
+          "name": "BASE_TIME"
+        },
+        {
+          "name": "ANCILLARY_SURGE_FEE"
+        }
+      ],
+      "totalFee": 3200
+    },
+    "parentId": "371281",
+    "avgRatingString": "4.3",
+    "totalRatingsString": "10K+",
+    "sla": {
+      "deliveryTime": 23,
+      "lastMileTravel": 1.3,
+      "serviceability": "SERVICEABLE",
+      "slaString": "23 mins",
+      "lastMileTravelString": "1.3 km",
+      "iconType": "ICON_TYPE_EMPTY"
+    },
+    "availability": {
+      "nextCloseTime": "2023-12-01 04:00:00",
+      "opened": true
+    },
+    "badges": {},
+    "isOpen": true,
+    "aggregatedDiscountInfoV2": {},
+    "type": "F",
+    "badgesV2": {
+      "entityBadges": {
+        "imageBased": {},
+        "textBased": {},
+        "textExtendedBadges": {}
+      }
+    },
+    "orderabilityCommunication": {
+      "title": {},
+      "subTitle": {},
+      "message": {},
+      "customIcon": {}
+    },
+    "differentiatedUi": {
+      "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+      "differentiatedUiMediaDetails": {
+        "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+        "lottie": {},
+        "video": {}
+      }
+    },
+    "reviewsSummary": {},
+    "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+    "restaurantOfferPresentationInfo": {}
+  },
+  "analytics": {
+    "context": "seo-data-958280fc-0b3c-4217-9573-c955c817c950"
+  },
+  "cta": {
+    "link": "https://www.swiggy.com/restaurants/leons-burgers-and-wings-leon-grill-koramangala-bangalore-65797",
+    "text": "RESTAURANT_MENU",
+    "type": "WEBLINK"
+  },
+  "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+}
