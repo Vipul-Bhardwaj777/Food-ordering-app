@@ -9,6 +9,7 @@ const MenuCard = ({ itemProp }) => {
         className="title flex-center justify-between mb-6 h-[21px] cursor-pointer "
         style={{ scrollMarginTop: "10px" }}
         onClick={() => setActiveIndex()}
+        data-testid="menuCardHeade"
       >
         <div className="title-left">
           <h3 className="text-mainText-color font-bold text-[18px] ">

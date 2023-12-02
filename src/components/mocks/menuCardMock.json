@@ -1,0 +1,2624 @@
+{
+  "itemCardList": [
+    {
+      "card": {
+        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+        "info": {
+          "id": "49312983",
+          "name": "Supreme Boneless Chicken Biryani",
+          "category": "Acclaimed Biryanis",
+          "description": "Serves 0 | A speciality of the house, a royal bestseller that needs no intoduction! flavorful indian dish with tasty boneless tender bites of chicken in a deliciously spiced and fragrant rice.",
+          "imageId": "0387817e239462fcfb98a1f568fa1a76",
+          "inStock": 1,
+          "price": 31500,
+          "variants": {},
+          "variantsV2": {},
+          "addons": [
+            {
+              "groupId": "125654732",
+              "groupName": "Extra Add Ons For Your Biryani",
+              "choices": [
+                {
+                  "id": "107894123",
+                  "name": "Salan",
+                  "price": 2500,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894134",
+                  "name": "Mixed Salad",
+                  "price": 2000,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894108",
+                  "name": "Boiled Egg",
+                  "price": 1500,
+                  "inStock": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894106",
+                  "name": "Supreme Boneless Chicken Masala",
+                  "price": 14900,
+                  "inStock": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894142",
+                  "name": "Raitha",
+                  "price": 2500,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                }
+              ],
+              "maxAddons": 5,
+              "maxFreeAddons": -1
+            },
+            {
+              "groupId": "125654733",
+              "groupName": "Choice Of Starters For Non-Veg Biryani",
+              "choices": [
+                {
+                  "id": "107894105",
+                  "name": "Chicken Lollypop",
+                  "price": 32500,
+                  "inStock": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894141",
+                  "name": "Andhra Chilli Chicken",
+                  "price": 32500,
+                  "inStock": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894117",
+                  "name": "Chicken 65 Boneless",
+                  "price": 33000,
+                  "inStock": 1,
+                  "isEnabled": 1
+                }
+              ],
+              "maxAddons": 3,
+              "maxFreeAddons": -1
+            },
+            {
+              "groupId": "125654734",
+              "groupName": "Beverages Add Ons",
+              "choices": [
+                {
+                  "id": "107894116",
+                  "name": "7 Up",
+                  "price": 5000,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894115",
+                  "name": "Aquafina",
+                  "price": 1000,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894114",
+                  "name": "Butter Milk",
+                  "price": 4000,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894113",
+                  "name": "Pepsi",
+                  "price": 5000,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                }
+              ],
+              "maxAddons": 4,
+              "maxFreeAddons": -1
+            },
+            {
+              "groupId": "125654735",
+              "groupName": "Add Ons (Dessert)",
+              "choices": [
+                {
+                  "id": "107894127",
+                  "name": "Rasmalai Twist",
+                  "price": 12000,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894126",
+                  "name": "Double Ka Meetha",
+                  "price": 9900,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894140",
+                  "name": "Gulab Jamoon (4Pcs)",
+                  "price": 9900,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894136",
+                  "name": "Tender Coconut Pudding",
+                  "price": 9900,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894139",
+                  "name": "Crystal Roll (2 Pcs)",
+                  "price": 7900,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                }
+              ],
+              "maxAddons": 5,
+              "maxFreeAddons": -1
+            }
+          ],
+          "itemAttribute": {
+            "vegClassifier": "NONVEG",
+            "portionSize": "Serves 0"
+          },
+          "ribbon": {
+            "text": "Bestseller",
+            "textColor": "#ffffff",
+            "topBackgroundColor": "#d53d4c",
+            "bottomBackgroundColor": "#b02331"
+          },
+          "showImage": true,
+          "itemBadge": {},
+          "badgesV2": {},
+          "isBestseller": true,
+          "ratings": {
+            "aggregatedRating": {
+              "rating": "4.0",
+              "ratingCount": "2122 ratings",
+              "ratingCountV2": "2122"
+            }
+          }
+        },
+        "analytics": {},
+        "hideRestaurantDetails": true
+      }
+    },
+    {
+      "card": {
+        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+        "info": {
+          "id": "49312944",
+          "name": "Nellore Chicken Biryani",
+          "category": "Acclaimed Biryanis",
+          "description": "Serves 0 | Flavoured and spiced basmati rice is greeted with wholesome chicken inspired by nellore dum style serves with double ka meetha.",
+          "imageId": "votokwhf8vvovgnprjmu",
+          "inStock": 1,
+          "price": 32500,
+          "variants": {},
+          "variantsV2": {},
+          "addons": [
+            {
+              "groupId": "125654740",
+              "groupName": "Accompaniments",
+              "choices": [
+                {
+                  "id": "107894138",
+                  "name": "Boiled Egg",
+                  "price": 1500,
+                  "inStock": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894137",
+                  "name": "Salan",
+                  "price": 2500,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894103",
+                  "name": "Mixed Salad",
+                  "price": 2000,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894135",
+                  "name": "Raitha",
+                  "price": 2500,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                }
+              ],
+              "maxAddons": 4,
+              "maxFreeAddons": -1
+            },
+            {
+              "groupId": "125654741",
+              "groupName": "Choice Of Starters For Non-Veg Biryani",
+              "choices": [
+                {
+                  "id": "107894105",
+                  "name": "Chicken Lollypop",
+                  "price": 32500,
+                  "inStock": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894141",
+                  "name": "Andhra Chilli Chicken",
+                  "price": 32500,
+                  "inStock": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894117",
+                  "name": "Chicken 65 Boneless",
+                  "price": 33000,
+                  "inStock": 1,
+                  "isEnabled": 1
+                }
+              ],
+              "maxAddons": 3,
+              "maxFreeAddons": -1
+            },
+            {
+              "groupId": "125654742",
+              "groupName": "Beverages Add Ons",
+              "choices": [
+                {
+                  "id": "107894116",
+                  "name": "7 Up",
+                  "price": 5000,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894115",
+                  "name": "Aquafina",
+                  "price": 1000,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894114",
+                  "name": "Butter Milk",
+                  "price": 4000,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894113",
+                  "name": "Pepsi",
+                  "price": 5000,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                }
+              ],
+              "maxAddons": 4,
+              "maxFreeAddons": -1
+            },
+            {
+              "groupId": "125654743",
+              "groupName": "Add Ons (Dessert)",
+              "choices": [
+                {
+                  "id": "107894127",
+                  "name": "Rasmalai Twist",
+                  "price": 12000,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894126",
+                  "name": "Double Ka Meetha",
+                  "price": 9900,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894140",
+                  "name": "Gulab Jamoon (4Pcs)",
+                  "price": 9900,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894136",
+                  "name": "Tender Coconut Pudding",
+                  "price": 9900,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894139",
+                  "name": "Crystal Roll (2 Pcs)",
+                  "price": 7900,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                }
+              ],
+              "maxAddons": 5,
+              "maxFreeAddons": -1
+            }
+          ],
+          "itemAttribute": {
+            "vegClassifier": "NONVEG",
+            "portionSize": "Serves 0"
+          },
+          "ribbon": {
+            "text": "Bestseller",
+            "textColor": "#ffffff",
+            "topBackgroundColor": "#d53d4c",
+            "bottomBackgroundColor": "#b02331"
+          },
+          "showImage": true,
+          "itemBadge": {},
+          "badgesV2": {},
+          "isBestseller": true,
+          "ratings": {
+            "aggregatedRating": {
+              "rating": "4.1",
+              "ratingCount": "1135 ratings",
+              "ratingCountV2": "1135"
+            }
+          }
+        },
+        "analytics": {},
+        "hideRestaurantDetails": true
+      }
+    },
+    {
+      "card": {
+        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+        "info": {
+          "id": "102645199",
+          "name": "Hyderabadi Chicken Biryani",
+          "category": "Acclaimed Biryanis",
+          "description": "Serves 0 | Aromatic mouth watering and authentic hyderabadi taste with succulent chicken in layers of fluffy rice serves with double ka meetha.",
+          "imageId": "brx7mn3bccpuscsnplho",
+          "inStock": 1,
+          "price": 31500,
+          "variants": {},
+          "variantsV2": {},
+          "addons": [
+            {
+              "groupId": "125654730",
+              "groupName": "Beverages Add Ons",
+              "choices": [
+                {
+                  "id": "107894116",
+                  "name": "7 Up",
+                  "price": 5000,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894115",
+                  "name": "Aquafina",
+                  "price": 1000,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894114",
+                  "name": "Butter Milk",
+                  "price": 4000,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894113",
+                  "name": "Pepsi",
+                  "price": 5000,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                }
+              ],
+              "maxAddons": 4,
+              "maxFreeAddons": -1
+            },
+            {
+              "groupId": "125654731",
+              "groupName": "Add Ons (Dessert)",
+              "choices": [
+                {
+                  "id": "107894127",
+                  "name": "Rasmalai Twist",
+                  "price": 12000,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894126",
+                  "name": "Double Ka Meetha",
+                  "price": 9900,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894140",
+                  "name": "Gulab Jamoon (4Pcs)",
+                  "price": 9900,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894136",
+                  "name": "Tender Coconut Pudding",
+                  "price": 9900,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894139",
+                  "name": "Crystal Roll (2 Pcs)",
+                  "price": 7900,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                }
+              ],
+              "maxAddons": 5,
+              "maxFreeAddons": -1
+            }
+          ],
+          "itemAttribute": {
+            "vegClassifier": "NONVEG",
+            "portionSize": "Serves 0"
+          },
+          "ribbon": {},
+          "showImage": true,
+          "itemBadge": {},
+          "badgesV2": {},
+          "ratings": {
+            "aggregatedRating": {
+              "rating": "3.4",
+              "ratingCount": "12 ratings",
+              "ratingCountV2": "12"
+            }
+          }
+        },
+        "analytics": {},
+        "hideRestaurantDetails": true
+      }
+    },
+    {
+      "card": {
+        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+        "info": {
+          "id": "49313066",
+          "name": "Babycorn Pudina Dry",
+          "category": "Lip Smacking Starters",
+          "description": "Serves 0 | Crunchy baby corn and juicy babycorn dry roasted in ghee, seasoned with spice mix and curry leaf tempering.",
+          "imageId": "mvpcxeffu2c2jb30zzmx",
+          "inStock": 1,
+          "isVeg": 1,
+          "price": 28000,
+          "variants": {},
+          "variantsV2": {},
+          "addons": [
+            {
+              "groupId": "125654539",
+              "groupName": "Portion",
+              "choices": [
+                {
+                  "id": "107894132",
+                  "name": "Regular",
+                  "inStock": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894124",
+                  "name": "Xl",
+                  "price": 55900,
+                  "inStock": 1,
+                  "isEnabled": 1
+                }
+              ],
+              "maxAddons": 2,
+              "maxFreeAddons": -1
+            },
+            {
+              "groupId": "125654540",
+              "groupName": "Beverages Add Ons",
+              "choices": [
+                {
+                  "id": "107894116",
+                  "name": "7 Up",
+                  "price": 5000,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894115",
+                  "name": "Aquafina",
+                  "price": 1000,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894114",
+                  "name": "Butter Milk",
+                  "price": 4000,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894113",
+                  "name": "Pepsi",
+                  "price": 5000,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                }
+              ],
+              "maxAddons": 4,
+              "maxFreeAddons": -1
+            },
+            {
+              "groupId": "125654541",
+              "groupName": "Add Ons (Dessert)",
+              "choices": [
+                {
+                  "id": "107894127",
+                  "name": "Rasmalai Twist",
+                  "price": 12000,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894126",
+                  "name": "Double Ka Meetha",
+                  "price": 9900,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894140",
+                  "name": "Gulab Jamoon (4Pcs)",
+                  "price": 9900,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894136",
+                  "name": "Tender Coconut Pudding",
+                  "price": 9900,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894139",
+                  "name": "Crystal Roll (2 Pcs)",
+                  "price": 7900,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                }
+              ],
+              "maxAddons": 5,
+              "maxFreeAddons": -1
+            }
+          ],
+          "itemAttribute": {
+            "vegClassifier": "VEG",
+            "portionSize": "Serves 0"
+          },
+          "ribbon": {},
+          "showImage": true,
+          "itemBadge": {},
+          "badgesV2": {},
+          "ratings": {
+            "aggregatedRating": {
+              "rating": "4.0",
+              "ratingCount": "50 ratings",
+              "ratingCountV2": "50"
+            }
+          }
+        },
+        "analytics": {},
+        "hideRestaurantDetails": true
+      }
+    },
+    {
+      "card": {
+        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+        "info": {
+          "id": "49313081",
+          "name": "Carrot 65",
+          "category": "Lip Smacking Starters",
+          "description": "Serves 0 | Carrot 65, is an exclusive nandhana speciality starter, tossed with a special masala, that will leave you wanting for more! chefs specialty.",
+          "imageId": "l2h18dqcjauk29skakre",
+          "inStock": 1,
+          "isVeg": 1,
+          "price": 25500,
+          "variants": {},
+          "variantsV2": {},
+          "addons": [
+            {
+              "groupId": "125654816",
+              "groupName": "Beverages Add Ons",
+              "choices": [
+                {
+                  "id": "107894116",
+                  "name": "7 Up",
+                  "price": 5000,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894115",
+                  "name": "Aquafina",
+                  "price": 1000,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894114",
+                  "name": "Butter Milk",
+                  "price": 4000,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894113",
+                  "name": "Pepsi",
+                  "price": 5000,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                }
+              ],
+              "maxAddons": 4,
+              "maxFreeAddons": -1
+            },
+            {
+              "groupId": "125654817",
+              "groupName": "Add Ons (Dessert)",
+              "choices": [
+                {
+                  "id": "107894127",
+                  "name": "Rasmalai Twist",
+                  "price": 12000,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894126",
+                  "name": "Double Ka Meetha",
+                  "price": 9900,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894136",
+                  "name": "Tender Coconut Pudding",
+                  "price": 9900,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894139",
+                  "name": "Crystal Roll (2 Pcs)",
+                  "price": 7900,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894140",
+                  "name": "Gulab Jamoon (4Pcs)",
+                  "price": 9900,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                }
+              ],
+              "maxAddons": 5,
+              "maxFreeAddons": -1
+            },
+            {
+              "groupId": "125671550",
+              "groupName": "Portions",
+              "choices": [
+                {
+                  "id": "107894107",
+                  "name": "King Size",
+                  "price": 49000,
+                  "inStock": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894109",
+                  "name": "Regular",
+                  "inStock": 1,
+                  "isEnabled": 1
+                }
+              ],
+              "maxAddons": 2,
+              "maxFreeAddons": -1
+            }
+          ],
+          "itemAttribute": {
+            "vegClassifier": "VEG",
+            "portionSize": "Serves 0"
+          },
+          "ribbon": {},
+          "showImage": true,
+          "itemBadge": {},
+          "badgesV2": {},
+          "ratings": {
+            "aggregatedRating": {
+              "rating": "4.7",
+              "ratingCount": "26 ratings",
+              "ratingCountV2": "26"
+            }
+          }
+        },
+        "analytics": {},
+        "hideRestaurantDetails": true
+      }
+    },
+    {
+      "card": {
+        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+        "info": {
+          "id": "49312896",
+          "name": "Gobi Pudhina Dry",
+          "category": "Lip Smacking Starters",
+          "description": "Serves 0 | All - time favourite , a signature preparation of nandhana",
+          "imageId": "bc5iaj6fsvk2f7txejo2",
+          "inStock": 1,
+          "isVeg": 1,
+          "price": 26500,
+          "variants": {},
+          "variantsV2": {},
+          "addons": [
+            {
+              "groupId": "125654543",
+              "groupName": "Beverages Add Ons",
+              "choices": [
+                {
+                  "id": "107894116",
+                  "name": "7 Up",
+                  "price": 5000,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894115",
+                  "name": "Aquafina",
+                  "price": 1000,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894114",
+                  "name": "Butter Milk",
+                  "price": 4000,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894113",
+                  "name": "Pepsi",
+                  "price": 5000,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                }
+              ],
+              "maxAddons": 4,
+              "maxFreeAddons": -1
+            },
+            {
+              "groupId": "125654544",
+              "groupName": "Add Ons (Dessert)",
+              "choices": [
+                {
+                  "id": "107894127",
+                  "name": "Rasmalai Twist",
+                  "price": 12000,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894126",
+                  "name": "Double Ka Meetha",
+                  "price": 9900,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894140",
+                  "name": "Gulab Jamoon (4Pcs)",
+                  "price": 9900,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894136",
+                  "name": "Tender Coconut Pudding",
+                  "price": 9900,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894139",
+                  "name": "Crystal Roll (2 Pcs)",
+                  "price": 7900,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                }
+              ],
+              "maxAddons": 5,
+              "maxFreeAddons": -1
+            }
+          ],
+          "itemAttribute": {
+            "vegClassifier": "VEG",
+            "portionSize": "Serves 0"
+          },
+          "ribbon": {},
+          "showImage": true,
+          "itemBadge": {},
+          "badgesV2": {},
+          "ratings": {
+            "aggregatedRating": {
+              "rating": "4.0",
+              "ratingCount": "20 ratings",
+              "ratingCountV2": "20"
+            }
+          }
+        },
+        "analytics": {},
+        "hideRestaurantDetails": true
+      }
+    },
+    {
+      "card": {
+        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+        "info": {
+          "id": "49313091",
+          "name": "Paneer Sholay Kebab",
+          "category": "Lip Smacking Starters",
+          "description": "Serves 0 | Cottage cheese - a signature preparation of the house",
+          "imageId": "zcyn8cvfhs8ebg5knent",
+          "inStock": 1,
+          "isVeg": 1,
+          "price": 30500,
+          "variants": {},
+          "variantsV2": {},
+          "addons": [
+            {
+              "groupId": "125654744",
+              "groupName": "Portion",
+              "choices": [
+                {
+                  "id": "107894132",
+                  "name": "Regular",
+                  "inStock": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894124",
+                  "name": "Xl",
+                  "price": 55900,
+                  "inStock": 1,
+                  "isEnabled": 1
+                }
+              ],
+              "maxAddons": 2,
+              "maxFreeAddons": -1
+            },
+            {
+              "groupId": "125654745",
+              "groupName": "Beverages Add Ons",
+              "choices": [
+                {
+                  "id": "107894116",
+                  "name": "7 Up",
+                  "price": 5000,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894115",
+                  "name": "Aquafina",
+                  "price": 1000,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894114",
+                  "name": "Butter Milk",
+                  "price": 4000,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894113",
+                  "name": "Pepsi",
+                  "price": 5000,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                }
+              ],
+              "maxAddons": 4,
+              "maxFreeAddons": -1
+            },
+            {
+              "groupId": "125654746",
+              "groupName": "Add Ons (Dessert)",
+              "choices": [
+                {
+                  "id": "107894127",
+                  "name": "Rasmalai Twist",
+                  "price": 12000,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894126",
+                  "name": "Double Ka Meetha",
+                  "price": 9900,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894136",
+                  "name": "Tender Coconut Pudding",
+                  "price": 9900,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894139",
+                  "name": "Crystal Roll (2 Pcs)",
+                  "price": 7900,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894140",
+                  "name": "Gulab Jamoon (4Pcs)",
+                  "price": 9900,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                }
+              ],
+              "maxAddons": 5,
+              "maxFreeAddons": -1
+            }
+          ],
+          "itemAttribute": {
+            "vegClassifier": "VEG",
+            "portionSize": "Serves 0"
+          },
+          "ribbon": {},
+          "showImage": true,
+          "itemBadge": {},
+          "badgesV2": {},
+          "ratings": {
+            "aggregatedRating": {
+              "rating": "4.1",
+              "ratingCount": "83 ratings",
+              "ratingCountV2": "83"
+            }
+          }
+        },
+        "analytics": {},
+        "hideRestaurantDetails": true
+      }
+    },
+    {
+      "card": {
+        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+        "info": {
+          "id": "49312951",
+          "name": "Peshawari Paneer Tikka",
+          "category": "Lip Smacking Starters",
+          "description": "Serves 0 | A delectable indian dish  made from chunks of paneer marinated in spices and grilled in a tandoor.",
+          "imageId": "a8du5g0da5dfpmywvym5",
+          "inStock": 1,
+          "isVeg": 1,
+          "price": 32000,
+          "variants": {},
+          "variantsV2": {},
+          "addons": [
+            {
+              "groupId": "125654559",
+              "groupName": "Portion",
+              "choices": [
+                {
+                  "id": "107894132",
+                  "name": "Regular",
+                  "inStock": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894124",
+                  "name": "Xl",
+                  "price": 55900,
+                  "inStock": 1,
+                  "isEnabled": 1
+                }
+              ],
+              "maxAddons": 2,
+              "maxFreeAddons": -1
+            },
+            {
+              "groupId": "125654560",
+              "groupName": "Beverages Add Ons",
+              "choices": [
+                {
+                  "id": "107894116",
+                  "name": "7 Up",
+                  "price": 5000,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894115",
+                  "name": "Aquafina",
+                  "price": 1000,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894114",
+                  "name": "Butter Milk",
+                  "price": 4000,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894113",
+                  "name": "Pepsi",
+                  "price": 5000,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                }
+              ],
+              "maxAddons": 4,
+              "maxFreeAddons": -1
+            },
+            {
+              "groupId": "125654561",
+              "groupName": "Add Ons (Dessert)",
+              "choices": [
+                {
+                  "id": "107894127",
+                  "name": "Rasmalai Twist",
+                  "price": 12000,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894126",
+                  "name": "Double Ka Meetha",
+                  "price": 9900,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894136",
+                  "name": "Tender Coconut Pudding",
+                  "price": 9900,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894139",
+                  "name": "Crystal Roll (2 Pcs)",
+                  "price": 7900,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894140",
+                  "name": "Gulab Jamoon (4Pcs)",
+                  "price": 9900,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                }
+              ],
+              "maxAddons": 5,
+              "maxFreeAddons": -1
+            }
+          ],
+          "itemAttribute": {
+            "vegClassifier": "VEG",
+            "portionSize": "Serves 0"
+          },
+          "ribbon": {},
+          "showImage": true,
+          "itemBadge": {},
+          "badgesV2": {},
+          "ratings": {
+            "aggregatedRating": {
+              "rating": "4.7",
+              "ratingCount": "25 ratings",
+              "ratingCountV2": "25"
+            }
+          }
+        },
+        "analytics": {},
+        "hideRestaurantDetails": true
+      }
+    },
+    {
+      "card": {
+        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+        "info": {
+          "id": "49312894",
+          "name": "Andhra Chilli Chicken",
+          "category": "Lip Smacking Starters",
+          "description": "Serves 0 | The spicy chicken gravy ornamented with green hot chilles, a celebrated nandhana special delicacy.",
+          "imageId": "cleymq8h5u06ihl9o9mv",
+          "inStock": 1,
+          "price": 32500,
+          "variants": {},
+          "variantsV2": {},
+          "addons": [
+            {
+              "groupId": "125654605",
+              "groupName": "Portion",
+              "choices": [
+                {
+                  "id": "107894132",
+                  "name": "Regular",
+                  "inStock": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894124",
+                  "name": "Xl",
+                  "price": 55900,
+                  "inStock": 1,
+                  "isEnabled": 1
+                }
+              ],
+              "maxAddons": 2,
+              "maxFreeAddons": -1
+            },
+            {
+              "groupId": "125654606",
+              "groupName": "Beverages Add Ons",
+              "choices": [
+                {
+                  "id": "107894116",
+                  "name": "7 Up",
+                  "price": 5000,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894115",
+                  "name": "Aquafina",
+                  "price": 1000,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894114",
+                  "name": "Butter Milk",
+                  "price": 4000,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894113",
+                  "name": "Pepsi",
+                  "price": 5000,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                }
+              ],
+              "maxAddons": 4,
+              "maxFreeAddons": -1
+            },
+            {
+              "groupId": "125654607",
+              "groupName": "Add Ons (Dessert)",
+              "choices": [
+                {
+                  "id": "107894127",
+                  "name": "Rasmalai Twist",
+                  "price": 12000,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894126",
+                  "name": "Double Ka Meetha",
+                  "price": 9900,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894140",
+                  "name": "Gulab Jamoon (4Pcs)",
+                  "price": 9900,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894136",
+                  "name": "Tender Coconut Pudding",
+                  "price": 9900,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894139",
+                  "name": "Crystal Roll (2 Pcs)",
+                  "price": 7900,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                }
+              ],
+              "maxAddons": 5,
+              "maxFreeAddons": -1
+            }
+          ],
+          "itemAttribute": {
+            "vegClassifier": "NONVEG",
+            "portionSize": "Serves 0"
+          },
+          "ribbon": {
+            "text": "Bestseller",
+            "textColor": "#ffffff",
+            "topBackgroundColor": "#d53d4c",
+            "bottomBackgroundColor": "#b02331"
+          },
+          "showImage": true,
+          "itemBadge": {},
+          "badgesV2": {},
+          "isBestseller": true,
+          "ratings": {
+            "aggregatedRating": {
+              "rating": "4.1",
+              "ratingCount": "549 ratings",
+              "ratingCountV2": "549"
+            }
+          }
+        },
+        "analytics": {},
+        "hideRestaurantDetails": true
+      }
+    },
+    {
+      "card": {
+        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+        "info": {
+          "id": "49313015",
+          "name": "Chicken 65 Boneless",
+          "category": "Lip Smacking Starters",
+          "description": "Serves 0 | Boneless tender chicken marinated in rich yogurt sauce, deep fried and served hot.",
+          "imageId": "pbpf6q21sot12sxrodxx",
+          "inStock": 1,
+          "price": 33000,
+          "variants": {},
+          "variantsV2": {},
+          "addons": [
+            {
+              "groupId": "125654778",
+              "groupName": "Select The Portion",
+              "choices": [
+                {
+                  "id": "107894102",
+                  "name": "Large",
+                  "price": 63200,
+                  "inStock": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894104",
+                  "name": "Regular",
+                  "inStock": 1,
+                  "isEnabled": 1
+                }
+              ],
+              "maxAddons": 2,
+              "maxFreeAddons": -1
+            },
+            {
+              "groupId": "125654779",
+              "groupName": "Beverages Add Ons",
+              "choices": [
+                {
+                  "id": "107894116",
+                  "name": "7 Up",
+                  "price": 5000,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894115",
+                  "name": "Aquafina",
+                  "price": 1000,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894114",
+                  "name": "Butter Milk",
+                  "price": 4000,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894113",
+                  "name": "Pepsi",
+                  "price": 5000,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                }
+              ],
+              "maxAddons": 4,
+              "maxFreeAddons": -1
+            },
+            {
+              "groupId": "125654780",
+              "groupName": "Add Ons (Dessert)",
+              "choices": [
+                {
+                  "id": "107894127",
+                  "name": "Rasmalai Twist",
+                  "price": 12000,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894126",
+                  "name": "Double Ka Meetha",
+                  "price": 9900,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894136",
+                  "name": "Tender Coconut Pudding",
+                  "price": 9900,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894139",
+                  "name": "Crystal Roll (2 Pcs)",
+                  "price": 7900,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894140",
+                  "name": "Gulab Jamoon (4Pcs)",
+                  "price": 9900,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                }
+              ],
+              "maxAddons": 5,
+              "maxFreeAddons": -1
+            }
+          ],
+          "itemAttribute": {
+            "vegClassifier": "NONVEG",
+            "portionSize": "Serves 0"
+          },
+          "ribbon": {},
+          "showImage": true,
+          "itemBadge": {},
+          "badgesV2": {},
+          "ratings": {
+            "aggregatedRating": {
+              "rating": "3.7",
+              "ratingCount": "109 ratings",
+              "ratingCountV2": "109"
+            }
+          }
+        },
+        "analytics": {},
+        "hideRestaurantDetails": true
+      }
+    },
+    {
+      "card": {
+        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+        "info": {
+          "id": "49313019",
+          "name": "Chicken Lollypop",
+          "category": "Lip Smacking Starters",
+          "description": "Serves 0 | Frenched chicken winglet coated in a spicy rice flour slurry and grilled until well done and juicy.",
+          "imageId": "dbg5kxuxroql42ai1xd6",
+          "inStock": 1,
+          "price": 32500,
+          "variants": {},
+          "variantsV2": {},
+          "addons": [
+            {
+              "groupId": "125654653",
+              "groupName": "Portion",
+              "choices": [
+                {
+                  "id": "107894132",
+                  "name": "Regular",
+                  "inStock": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894124",
+                  "name": "Xl",
+                  "price": 55900,
+                  "inStock": 1,
+                  "isEnabled": 1
+                }
+              ],
+              "maxAddons": 2,
+              "maxFreeAddons": -1
+            },
+            {
+              "groupId": "125654654",
+              "groupName": "Beverages Add Ons",
+              "choices": [
+                {
+                  "id": "107894116",
+                  "name": "7 Up",
+                  "price": 5000,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894115",
+                  "name": "Aquafina",
+                  "price": 1000,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894114",
+                  "name": "Butter Milk",
+                  "price": 4000,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894113",
+                  "name": "Pepsi",
+                  "price": 5000,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                }
+              ],
+              "maxAddons": 4,
+              "maxFreeAddons": -1
+            },
+            {
+              "groupId": "125654655",
+              "groupName": "Add Ons (Dessert)",
+              "choices": [
+                {
+                  "id": "107894127",
+                  "name": "Rasmalai Twist",
+                  "price": 12000,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894126",
+                  "name": "Double Ka Meetha",
+                  "price": 9900,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894140",
+                  "name": "Gulab Jamoon (4Pcs)",
+                  "price": 9900,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894136",
+                  "name": "Tender Coconut Pudding",
+                  "price": 9900,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894139",
+                  "name": "Crystal Roll (2 Pcs)",
+                  "price": 7900,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                }
+              ],
+              "maxAddons": 5,
+              "maxFreeAddons": -1
+            }
+          ],
+          "itemAttribute": {
+            "vegClassifier": "NONVEG",
+            "portionSize": "Serves 0"
+          },
+          "ribbon": {},
+          "showImage": true,
+          "itemBadge": {},
+          "badgesV2": {},
+          "ratings": {
+            "aggregatedRating": {
+              "rating": "3.8",
+              "ratingCount": "136 ratings",
+              "ratingCountV2": "136"
+            }
+          }
+        },
+        "analytics": {},
+        "hideRestaurantDetails": true
+      }
+    },
+    {
+      "card": {
+        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+        "info": {
+          "id": "49313024",
+          "name": "Chicken Sholay Kebab",
+          "category": "Lip Smacking Starters",
+          "description": "Serves 0 | Batter fried chicken sauteed & tossed with yogurt sauce and rich spices.",
+          "imageId": "m7yuna86h4v4usxhtxov",
+          "inStock": 1,
+          "price": 33000,
+          "variants": {},
+          "variantsV2": {},
+          "addons": [
+            {
+              "groupId": "125654788",
+              "groupName": "Select The Portion",
+              "choices": [
+                {
+                  "id": "107894102",
+                  "name": "Large",
+                  "price": 63200,
+                  "inStock": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894104",
+                  "name": "Regular",
+                  "inStock": 1,
+                  "isEnabled": 1
+                }
+              ],
+              "maxAddons": 2,
+              "maxFreeAddons": -1
+            },
+            {
+              "groupId": "125654789",
+              "groupName": "Beverages Add Ons",
+              "choices": [
+                {
+                  "id": "107894116",
+                  "name": "7 Up",
+                  "price": 5000,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894115",
+                  "name": "Aquafina",
+                  "price": 1000,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894114",
+                  "name": "Butter Milk",
+                  "price": 4000,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894113",
+                  "name": "Pepsi",
+                  "price": 5000,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                }
+              ],
+              "maxAddons": 4,
+              "maxFreeAddons": -1
+            },
+            {
+              "groupId": "125654790",
+              "groupName": "Add Ons (Dessert)",
+              "choices": [
+                {
+                  "id": "107894127",
+                  "name": "Rasmalai Twist",
+                  "price": 12000,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894126",
+                  "name": "Double Ka Meetha",
+                  "price": 9900,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894140",
+                  "name": "Gulab Jamoon (4Pcs)",
+                  "price": 9900,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894136",
+                  "name": "Tender Coconut Pudding",
+                  "price": 9900,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894139",
+                  "name": "Crystal Roll (2 Pcs)",
+                  "price": 7900,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                }
+              ],
+              "maxAddons": 5,
+              "maxFreeAddons": -1
+            }
+          ],
+          "itemAttribute": {
+            "vegClassifier": "NONVEG",
+            "portionSize": "Serves 0"
+          },
+          "ribbon": {
+            "text": "Bestseller",
+            "textColor": "#ffffff",
+            "topBackgroundColor": "#d53d4c",
+            "bottomBackgroundColor": "#b02331"
+          },
+          "showImage": true,
+          "itemBadge": {},
+          "badgesV2": {},
+          "isBestseller": true,
+          "ratings": {
+            "aggregatedRating": {
+              "rating": "4.2",
+              "ratingCount": "285 ratings",
+              "ratingCountV2": "285"
+            }
+          }
+        },
+        "analytics": {},
+        "hideRestaurantDetails": true
+      }
+    },
+    {
+      "card": {
+        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+        "info": {
+          "id": "49313104",
+          "name": "Kalmi Kebab Full",
+          "category": "Lip Smacking Starters",
+          "description": "Serves 0 | A royal soldier's choice, chicken tangdi stuffed with chicken minced and cooked in a clay oven",
+          "imageId": "zzfs2zncv1zgwvhfydir",
+          "inStock": 1,
+          "price": 49900,
+          "variants": {},
+          "variantsV2": {},
+          "addons": [
+            {
+              "groupId": "125654651",
+              "groupName": "Beverages Add Ons",
+              "choices": [
+                {
+                  "id": "107894116",
+                  "name": "7 Up",
+                  "price": 5000,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894115",
+                  "name": "Aquafina",
+                  "price": 1000,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894114",
+                  "name": "Butter Milk",
+                  "price": 4000,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894113",
+                  "name": "Pepsi",
+                  "price": 5000,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                }
+              ],
+              "maxAddons": 4,
+              "maxFreeAddons": -1
+            },
+            {
+              "groupId": "125654652",
+              "groupName": "Add Ons (Dessert)",
+              "choices": [
+                {
+                  "id": "107894127",
+                  "name": "Rasmalai Twist",
+                  "price": 12000,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894126",
+                  "name": "Double Ka Meetha",
+                  "price": 9900,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894136",
+                  "name": "Tender Coconut Pudding",
+                  "price": 9900,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894139",
+                  "name": "Crystal Roll (2 Pcs)",
+                  "price": 7900,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894140",
+                  "name": "Gulab Jamoon (4Pcs)",
+                  "price": 9900,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                }
+              ],
+              "maxAddons": 5,
+              "maxFreeAddons": -1
+            }
+          ],
+          "itemAttribute": {
+            "vegClassifier": "NONVEG",
+            "portionSize": "Serves 0"
+          },
+          "ribbon": {},
+          "showImage": true,
+          "itemBadge": {},
+          "badgesV2": {},
+          "ratings": {
+            "aggregatedRating": {
+              "rating": "4.8",
+              "ratingCount": "31 ratings",
+              "ratingCountV2": "31"
+            }
+          }
+        },
+        "analytics": {},
+        "hideRestaurantDetails": true
+      }
+    },
+    {
+      "card": {
+        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+        "info": {
+          "id": "57960727",
+          "name": "Prawns Sholay",
+          "category": "Lip Smacking Starters",
+          "description": "Serves 0 | Fresh prawns tossed in home made secret curd based sauce.",
+          "imageId": "hhidxbhus7fvmnu4rqcc",
+          "inStock": 1,
+          "price": 43000,
+          "variants": {},
+          "variantsV2": {},
+          "addons": [
+            {
+              "groupId": "125654534",
+              "groupName": "Beverages Add Ons",
+              "choices": [
+                {
+                  "id": "107894116",
+                  "name": "7 Up",
+                  "price": 5000,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894115",
+                  "name": "Aquafina",
+                  "price": 1000,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894114",
+                  "name": "Butter Milk",
+                  "price": 4000,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894113",
+                  "name": "Pepsi",
+                  "price": 5000,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                }
+              ],
+              "maxAddons": 4,
+              "maxFreeAddons": -1
+            },
+            {
+              "groupId": "125654535",
+              "groupName": "Add Ons (Dessert)",
+              "choices": [
+                {
+                  "id": "107894127",
+                  "name": "Rasmalai Twist",
+                  "price": 12000,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894126",
+                  "name": "Double Ka Meetha",
+                  "price": 9900,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894140",
+                  "name": "Gulab Jamoon (4Pcs)",
+                  "price": 9900,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894136",
+                  "name": "Tender Coconut Pudding",
+                  "price": 9900,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894139",
+                  "name": "Crystal Roll (2 Pcs)",
+                  "price": 7900,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                }
+              ],
+              "maxAddons": 5,
+              "maxFreeAddons": -1
+            }
+          ],
+          "itemAttribute": {
+            "vegClassifier": "NONVEG",
+            "portionSize": "Serves 0"
+          },
+          "ribbon": {},
+          "showImage": true,
+          "itemBadge": {},
+          "badgesV2": {},
+          "ratings": {
+            "aggregatedRating": {
+              "rating": "4.7",
+              "ratingCount": "11 ratings",
+              "ratingCountV2": "11"
+            }
+          }
+        },
+        "analytics": {},
+        "hideRestaurantDetails": true
+      }
+    },
+    {
+      "card": {
+        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+        "info": {
+          "id": "49313048",
+          "name": "Fish Fry",
+          "category": "Lip Smacking Starters",
+          "description": "Serves 0 | Fishes battered and fried with authentic andhra spices",
+          "imageId": "a9odswmkmfkokijwinjs",
+          "inStock": 1,
+          "price": 47500,
+          "variants": {},
+          "variantsV2": {},
+          "addons": [
+            {
+              "groupId": "125654656",
+              "groupName": "Beverages Add Ons",
+              "choices": [
+                {
+                  "id": "107894116",
+                  "name": "7 Up",
+                  "price": 5000,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894115",
+                  "name": "Aquafina",
+                  "price": 1000,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894114",
+                  "name": "Butter Milk",
+                  "price": 4000,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894113",
+                  "name": "Pepsi",
+                  "price": 5000,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                }
+              ],
+              "maxAddons": 4,
+              "maxFreeAddons": -1
+            },
+            {
+              "groupId": "125654657",
+              "groupName": "Add Ons (Dessert)",
+              "choices": [
+                {
+                  "id": "107894127",
+                  "name": "Rasmalai Twist",
+                  "price": 12000,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894126",
+                  "name": "Double Ka Meetha",
+                  "price": 9900,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894140",
+                  "name": "Gulab Jamoon (4Pcs)",
+                  "price": 9900,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894136",
+                  "name": "Tender Coconut Pudding",
+                  "price": 9900,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894139",
+                  "name": "Crystal Roll (2 Pcs)",
+                  "price": 7900,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                }
+              ],
+              "maxAddons": 5,
+              "maxFreeAddons": -1
+            }
+          ],
+          "itemAttribute": {
+            "vegClassifier": "NONVEG",
+            "portionSize": "Serves 0"
+          },
+          "ribbon": {},
+          "showImage": true,
+          "itemBadge": {},
+          "badgesV2": {},
+          "ratings": {
+            "aggregatedRating": {
+              "rating": "4.4",
+              "ratingCount": "101 ratings",
+              "ratingCountV2": "101"
+            }
+          }
+        },
+        "analytics": {},
+        "hideRestaurantDetails": true
+      }
+    },
+    {
+      "card": {
+        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+        "info": {
+          "id": "49312906",
+          "name": "Kothimeera Paneer Curry",
+          "category": "Main Course",
+          "description": "Serves 0 | Cottage cheese in coriander based gravy",
+          "imageId": "dfyl6yogoihcibzpuebo",
+          "inStock": 1,
+          "isVeg": 1,
+          "price": 29900,
+          "variants": {},
+          "variantsV2": {},
+          "addons": [
+            {
+              "groupId": "125654694",
+              "groupName": "Beverages Add Ons",
+              "choices": [
+                {
+                  "id": "107894116",
+                  "name": "7 Up",
+                  "price": 5000,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894115",
+                  "name": "Aquafina",
+                  "price": 1000,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894114",
+                  "name": "Butter Milk",
+                  "price": 4000,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894113",
+                  "name": "Pepsi",
+                  "price": 5000,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                }
+              ],
+              "maxAddons": 4,
+              "maxFreeAddons": -1
+            },
+            {
+              "groupId": "125654695",
+              "groupName": "Add Ons (Dessert)",
+              "choices": [
+                {
+                  "id": "107894127",
+                  "name": "Rasmalai Twist",
+                  "price": 12000,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894126",
+                  "name": "Double Ka Meetha",
+                  "price": 9900,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894140",
+                  "name": "Gulab Jamoon (4Pcs)",
+                  "price": 9900,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894136",
+                  "name": "Tender Coconut Pudding",
+                  "price": 9900,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894139",
+                  "name": "Crystal Roll (2 Pcs)",
+                  "price": 7900,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                }
+              ],
+              "maxAddons": 5,
+              "maxFreeAddons": -1
+            }
+          ],
+          "itemAttribute": {
+            "vegClassifier": "VEG",
+            "portionSize": "Serves 0"
+          },
+          "ribbon": {},
+          "showImage": true,
+          "itemBadge": {},
+          "badgesV2": {},
+          "ratings": {
+            "aggregatedRating": {
+              "rating": "4.4",
+              "ratingCount": "53 ratings",
+              "ratingCountV2": "53"
+            }
+          }
+        },
+        "analytics": {},
+        "hideRestaurantDetails": true
+      }
+    },
+    {
+      "card": {
+        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+        "info": {
+          "id": "49312932",
+          "name": "Butter Naan",
+          "category": "Breads",
+          "description": "Serves 0 | Cushiony and well cooked flatbread served with a layer of butter.",
+          "imageId": "gnohbargxqcssl0l1260",
+          "inStock": 1,
+          "isVeg": 1,
+          "price": 7500,
+          "variants": {},
+          "variantsV2": {},
+          "itemAttribute": {
+            "vegClassifier": "VEG",
+            "portionSize": "Serves 0"
+          },
+          "ribbon": {},
+          "showImage": true,
+          "itemBadge": {},
+          "badgesV2": {},
+          "ratings": {
+            "aggregatedRating": {
+              "rating": "4.3",
+              "ratingCount": "150 ratings",
+              "ratingCountV2": "150"
+            }
+          }
+        },
+        "analytics": {},
+        "hideRestaurantDetails": true
+      }
+    },
+    {
+      "card": {
+        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+        "info": {
+          "id": "49313022",
+          "name": "Chicken Noodles",
+          "category": "Rice & Noodles",
+          "description": "Serves 0 | Noodles and vegetables stir fried with scrambled chicken.",
+          "imageId": "e9mu9g2crrtethbsocdf",
+          "inStock": 1,
+          "price": 29900,
+          "variants": {},
+          "variantsV2": {},
+          "addons": [
+            {
+              "groupId": "125654800",
+              "groupName": "Beverages Add Ons",
+              "choices": [
+                {
+                  "id": "107894116",
+                  "name": "7 Up",
+                  "price": 5000,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894115",
+                  "name": "Aquafina",
+                  "price": 1000,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894114",
+                  "name": "Butter Milk",
+                  "price": 4000,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894113",
+                  "name": "Pepsi",
+                  "price": 5000,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                }
+              ],
+              "maxAddons": 4,
+              "maxFreeAddons": -1
+            },
+            {
+              "groupId": "125654801",
+              "groupName": "Add Ons (Dessert)",
+              "choices": [
+                {
+                  "id": "107894127",
+                  "name": "Rasmalai Twist",
+                  "price": 12000,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894126",
+                  "name": "Double Ka Meetha",
+                  "price": 9900,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894140",
+                  "name": "Gulab Jamoon (4Pcs)",
+                  "price": 9900,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894136",
+                  "name": "Tender Coconut Pudding",
+                  "price": 9900,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894139",
+                  "name": "Crystal Roll (2 Pcs)",
+                  "price": 7900,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                }
+              ],
+              "maxAddons": 5,
+              "maxFreeAddons": -1
+            }
+          ],
+          "itemAttribute": {
+            "vegClassifier": "NONVEG",
+            "portionSize": "Serves 0"
+          },
+          "ribbon": {},
+          "showImage": true,
+          "itemBadge": {},
+          "badgesV2": {},
+          "ratings": {
+            "aggregatedRating": {
+              "rating": "4.2",
+              "ratingCount": "26 ratings",
+              "ratingCountV2": "26"
+            }
+          }
+        },
+        "analytics": {},
+        "hideRestaurantDetails": true
+      }
+    },
+    {
+      "card": {
+        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+        "info": {
+          "id": "49313038",
+          "name": "Prawn Noodles",
+          "category": "Rice & Noodles",
+          "description": "Serves 0 | Soft noodles sauteed with prawns and add toppings to your choice.",
+          "imageId": "gvhxl6h4ofbcetxwe1k1",
+          "inStock": 1,
+          "price": 36000,
+          "variants": {},
+          "variantsV2": {},
+          "addons": [
+            {
+              "groupId": "125654720",
+              "groupName": "Beverages Add Ons",
+              "choices": [
+                {
+                  "id": "107894116",
+                  "name": "7 Up",
+                  "price": 5000,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894115",
+                  "name": "Aquafina",
+                  "price": 1000,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894114",
+                  "name": "Butter Milk",
+                  "price": 4000,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894113",
+                  "name": "Pepsi",
+                  "price": 5000,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                }
+              ],
+              "maxAddons": 4,
+              "maxFreeAddons": -1
+            },
+            {
+              "groupId": "125654721",
+              "groupName": "Add Ons (Dessert)",
+              "choices": [
+                {
+                  "id": "107894127",
+                  "name": "Rasmalai Twist",
+                  "price": 12000,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894126",
+                  "name": "Double Ka Meetha",
+                  "price": 9900,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894140",
+                  "name": "Gulab Jamoon (4Pcs)",
+                  "price": 9900,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894136",
+                  "name": "Tender Coconut Pudding",
+                  "price": 9900,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                },
+                {
+                  "id": "107894139",
+                  "name": "Crystal Roll (2 Pcs)",
+                  "price": 7900,
+                  "inStock": 1,
+                  "isVeg": 1,
+                  "isEnabled": 1
+                }
+              ],
+              "maxAddons": 5,
+              "maxFreeAddons": -1
+            }
+          ],
+          "itemAttribute": {
+            "vegClassifier": "NONVEG",
+            "portionSize": "Serves 0"
+          },
+          "ribbon": {},
+          "showImage": true,
+          "itemBadge": {},
+          "badgesV2": {},
+          "ratings": {
+            "aggregatedRating": {
+              "rating": "5.0",
+              "ratingCount": "3 ratings",
+              "ratingCountV2": "3"
+            }
+          }
+        },
+        "analytics": {},
+        "hideRestaurantDetails": true
+      }
+    },
+    {
+      "card": {
+        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+        "info": {
+          "id": "75748074",
+          "name": "Rasmalai Twist",
+          "category": "Dessert",
+          "description": "Serves 0 | A delicious dessert layered with luscious cream and super soft & spongy  rasmalai on a base of perfectly crumbled biscuit.",
+          "imageId": "tkgjzysrduhijeenua5b",
+          "inStock": 1,
+          "isVeg": 1,
+          "price": 12000,
+          "variants": {},
+          "variantsV2": {},
+          "itemAttribute": {
+            "vegClassifier": "VEG",
+            "portionSize": "Serves 0"
+          },
+          "ribbon": {},
+          "showImage": true,
+          "itemBadge": {},
+          "badgesV2": {},
+          "ratings": {
+            "aggregatedRating": {
+              "rating": "3.8",
+              "ratingCount": "33 ratings",
+              "ratingCountV2": "33"
+            }
+          }
+        },
+        "analytics": {},
+        "hideRestaurantDetails": true
+      }
+    }
+  ],
+  "title": "Recommended",
+  "showItems": true
+}

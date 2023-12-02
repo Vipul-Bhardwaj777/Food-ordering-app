@@ -29,7 +29,8 @@ const SmallItem = ({ info }) => {
   };
 
   return (
-    <div className="small-itemMain flex-center border-b border-dotted border-smallText-color justify-between gap-5 pb-5 w-full ">
+    <div className="small-itemMain flex-center border-b border-dotted border-smallText-color justify-between gap-5 pb-5 w-full "
+    data-testid="smallItemMain">
       <div className="smallItem-left max-w-[632px] ">
         {itemAttribute?.vegClassifier === "VEG" ? (
           <img className="veg-nonveg h-4 w-[14px] mb-1 " src={VEG} />
