@@ -109,4 +109,32 @@ describe("Cart flow test cases", () => {
 
     expect(emptyHeading).toBeInTheDocument();
   });
+
+  it("Should increase and decrease the cart item", async () => {
+    await act(async () => {
+      render(
+        <BrowserRouter>
+          <Provider store={appStore}>
+            <ResMenu />
+            <CarttPage />
+          </Provider>
+        </BrowserRouter>
+      );
+    });
+
+    const addBtns = screen.getAllByTestId("addBtn");
+    fireEvent.click(addBtns[0]);
+
+    const addBtnsCart = screen.getAllByTestId("cartRightAddBtn");
+
+    const quantities = screen.getAllByTestId("CartItemQuant");
+    expect(quantities[0].textContent).toBe("1");
+
+    fireEvent.click(addBtnsCart[0]);
+    expect(quantities[0].textContent).toBe("2");
+
+    const removeBtnsCart = screen.getAllByTestId("cartRightRemoveBtn");
+    fireEvent.click(removeBtnsCart[0]);
+    expect(quantities[0].textContent).toBe("1");
+  });
 });
