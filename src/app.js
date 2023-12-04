@@ -1,12 +1,12 @@
-import React from "react";
+import React, { Suspense, lazy } from "react";
 import ReactDOM from "react-dom/client";
 import Header from "./components/Header";
 import Main from "./components/Main";
-import OfferPage from "./components/OfferPage";
+// import OfferPage from "./components/OfferPage";
 import ErrorPage from "./components/ErrorPage";
-import HelpPage from "./components/HelpPage";
-import CarttPage from "./components/CarttPage";
-import ResMenu from "./components/ResMenu";
+// import HelpPage from "./components/HelpPage";
+// import CarttPage from "./components/CarttPage";
+// import ResMenu from "./components/ResMenu";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import userContext from "./utils/userContext";
 import useLoginData from "./utils/useLoginData";
@@ -14,6 +14,10 @@ import appStore from "./utils/appStore";
 import { Provider } from "react-redux";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
+const OfferPage = lazy(() => import("./components/OfferPage"));
+const HelpPage = lazy(() => import("./components/HelpPage"));
+const ResMenu = lazy(() => import("./components/ResMenu"));
+const CarttPage = lazy(() => import("./components/CarttPage"));
 
 const AppLayout = () => {
   const userName = useLoginData();
@@ -41,19 +45,35 @@ const appRouter = createBrowserRouter([
       },
       {
         path: "/offers",
-        element: <OfferPage />,
+        element: (
+          <Suspense>
+            <OfferPage />
+          </Suspense>
+        ),
       },
       {
         path: "/help",
-        element: <HelpPage name={"assistant"} id={"123"} />,
+        element: (
+          <Suspense>
+            <HelpPage name={"assistant"} id={"123"} />
+          </Suspense>
+        ),
       },
       {
         path: "/cart",
-        element: <CarttPage />,
+        element: (
+          <Suspense>
+            <CarttPage />
+          </Suspense>
+        ),
       },
       {
         path: "/restaurant/:resId",
-        element: <ResMenu />,
+        element: (
+          <Suspense>
+            <ResMenu />
+          </Suspense>
+        ),
       },
     ],
     errorElement: <ErrorPage />,

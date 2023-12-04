@@ -39,13 +39,14 @@ const Header = () => {
           </li>
           <li>
             <Link
-              className={`nav-link font-medium flex-center hover:text-swiggy-color transition  gap-3 text-[16px]  bg-white cursor-pointer w-[77px] text-mainText-color ${
+              className={`nav-link relative font-medium flex-center hover:text-swiggy-color transition  gap-3 text-[16px]  bg-white cursor-pointer w-[77px] text-mainText-color ${
                 location.pathname === "/offers" ? "active-link" : ""
               }`}
               to="/offers"
             >
               <i className="fa-solid fa-gift"></i>
               Offers
+              <h1 className="text-[10px] text-swiggy-color absolute -right-[22px] -top-1 font-medium">NEW</h1>
             </Link>
           </li>
           <li>
