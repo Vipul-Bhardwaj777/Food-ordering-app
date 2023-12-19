@@ -43,5 +43,7 @@ This project is only for educational purposes.
 
 For inquiries or feedback, feel free to reach out:
 
+- Linkedin: [Vipul Bhardwaj](https://www.linkedin.com/in/vipul-bhardwaj-444888207/?profileId=ACoAADSiEHQB2yM5FOFGxumjFY77ssmE--g4wes) 
 - Email: [vipulbhardwaj785@gmail.com](mailto:your.email@example.com)
 - GitHub: [Vipul-Bhardwaj777](https://github.com/Vipul-Bhardwaj777)
+  
