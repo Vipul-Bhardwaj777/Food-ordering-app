@@ -2,7 +2,8 @@
 
 Welcome to my Food Ordering App! Tomato is a web application built using Reactjs that allows users to browse restaurants using Swiggy API, view menus, and add their favorite food to the cart for checkout. This front-end application is a clone created for educational purposes.
 
-## Troubleshoot - If you are getting an error failed to fetch! this is because this web app uses Swiggy-owned API and violates the CORS policy so use this extension to bypss  CORS  - https://chromewebstore.google.com/detail/cors-unblock/lfhmikememgdcahcdlaciloancbhjino 
+## Troubleshoot
+If you are getting an error failed to fetch! this is because this web app uses Swiggy-owned API and violates the CORS policy so use this extension to bypss  CORS  - https://chromewebstore.google.com/detail/cors-unblock/lfhmikememgdcahcdlaciloancbhjino 
 
 ## Technologies Used
 
