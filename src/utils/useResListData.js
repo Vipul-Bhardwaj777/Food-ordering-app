@@ -12,7 +12,7 @@ const useResListData = () => {
       const data = await fetch(RES_API);
       const json = await data.json();
       const mainResList =
-        json?.data?.cards[5]?.card?.card?.gridElements?.infoWithStyle
+        json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle
           ?.restaurants;
       setResList(mainResList);
     } catch (error) {
