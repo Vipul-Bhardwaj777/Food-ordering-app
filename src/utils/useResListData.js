@@ -19,7 +19,10 @@ const useResListData = () => {
 
       dispatch(addResList(mainResList));
     } catch (error) {
-      alert(error);
+      alert(
+        error +
+          " data from API. Blocked by CORS policy, this will be resolved by a CORS bypass. Please contact the owner"
+      );
     }
   };
 };
