@@ -1,8 +1,10 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { MENU_API } from "../utils/constants";
+import { useDispatch } from "react-redux";
+import { addResMenu } from "./resSlice";
 
 const useMenuData = (resId) => {
-  const [menuData, setMenuData] = useState(null);
+  const dispatch = useDispatch();
   useEffect(() => {
     fetchMenuData();
   }, []);
@@ -11,13 +13,11 @@ const useMenuData = (resId) => {
     try {
       const data = await fetch(MENU_API + resId);
       const json = await data.json();
-      setMenuData(json?.data);
+      dispatch(addResMenu(json?.data));
     } catch (error) {
       alert(error);
     }
   };
-
-  return menuData;
 };
 
 export default useMenuData;

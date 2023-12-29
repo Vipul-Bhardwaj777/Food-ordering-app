@@ -1,8 +1,10 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { RES_API } from "../utils/constants";
+import { useDispatch } from "react-redux";
+import { addResList } from "./resSlice";
 
 const useResListData = () => {
-  const [resList, setResList] = useState([]);
+  const dispatch = useDispatch();
   useEffect(() => {
     fetchData();
   }, []);
@@ -14,13 +16,12 @@ const useResListData = () => {
       const mainResList =
         json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle
           ?.restaurants;
-      setResList(mainResList);
+
+      dispatch(addResList(mainResList));
     } catch (error) {
       alert(error);
     }
   };
-
-  return resList;
 };
 
 export default useResListData;

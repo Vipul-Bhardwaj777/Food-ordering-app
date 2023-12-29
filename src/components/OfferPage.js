@@ -6,9 +6,11 @@ import ResCard from "./ResCard";
 import Footer from "./Footer";
 import useOnlineStatus from "../utils/useOnlineStatus";
 import OfflinePage from "./OfflinePage";
+import { useSelector } from "react-redux";
 
 const OfferPage = () => {
-  const ResList = useResListData();
+  useResListData();
+  const ResList = useSelector((store) => store.restaurantData.resList);
   const [filterList, setFilterList] = useState([]);
   const [filter, setFilter] = useState(false);
   const [isActive, setIsActive] = useState(false);
