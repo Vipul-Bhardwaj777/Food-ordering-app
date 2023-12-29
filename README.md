@@ -11,7 +11,7 @@ If you are getting an error failed to fetch! this is because this web app uses S
 
 - **Reactjs**
 - **React-context**
-- **Redux**
+- **Redux-toolkit**
 - **Tailwind**
 - **Jest**
 
