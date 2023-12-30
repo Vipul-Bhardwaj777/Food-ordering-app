@@ -1,12 +1,10 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { MENU_API } from "../utils/constants";
-import { useDispatch } from "react-redux";
-import { addResMenu } from "./resSlice";
 
 const useMenuData = (resId) => {
-  const dispatch = useDispatch();
+  const [menuData, setMenuData] = useState(null);
   useEffect(() => {
-    fetchMenuData();
+    fetchMenuData(resId);
   }, []);
 
   const fetchMenuData = async () => {
@@ -15,7 +13,7 @@ const useMenuData = (resId) => {
         "https://corsproxy.org/?" + encodeURIComponent(MENU_API + resId)
       );
       const json = await data.json();
-      dispatch(addResMenu(json?.data));
+      setMenuData(json?.data);
     } catch (error) {
       alert(
         error +
@@ -23,6 +21,7 @@ const useMenuData = (resId) => {
       );
     }
   };
+  return menuData;
 };
 
 export default useMenuData;

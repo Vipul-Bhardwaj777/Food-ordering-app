@@ -4,12 +4,10 @@ import { useParams } from "react-router-dom";
 import OfferCard from "./OfferCard";
 import MenuCard from "./MenuCard";
 import useMenuData from "../utils/useMenuData";
-import { useSelector } from "react-redux";
 
 const ResMenu = () => {
   const { resId } = useParams();
-  useMenuData(resId);
-  const menuData = useSelector((store) => store.restaurantData.menuData);
+  const menuData = useMenuData(resId);
   const [ActiveIndex, setActiveIndex] = useState(0);
 
   const [veg, setVeg] = useState(false);

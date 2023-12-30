@@ -8,7 +8,9 @@ import { useState } from "react";
 import { useEffect } from "react";
 
 const SmallItem = ({ info }) => {
-  const { name, price, itemAttribute, description, imageId } = info;
+  const { name, price, defaultPrice, itemAttribute, description, imageId } =
+    info;
+
   const cartItems = useSelector((state) => state.cart.items);
 
   const dispatch = useDispatch();
@@ -29,8 +31,10 @@ const SmallItem = ({ info }) => {
   };
 
   return (
-    <div className="small-itemMain flex-center border-b border-dotted border-smallText-color justify-between gap-5 pb-5 w-full "
-    data-testid="smallItemMain">
+    <div
+      className="small-itemMain flex-center border-b border-dotted border-smallText-color justify-between gap-5 pb-5 w-full "
+      data-testid="smallItemMain"
+    >
       <div className="smallItem-left max-w-[632px] ">
         {itemAttribute?.vegClassifier === "VEG" ? (
           <img className="veg-nonveg h-4 w-[14px] mb-1 " src={VEG} />
@@ -42,7 +46,7 @@ const SmallItem = ({ info }) => {
         </h4>
 
         <p className="text-mainText-color text-[14px] mb-[14px] ">
-          ₹ {price / 100}
+          ₹ {price === undefined ? defaultPrice / 100 : price / 100}
         </p>
         {description != null ? (
           <small className="text-smallText-color text-[12px] font-extralight ">
@@ -65,12 +69,11 @@ const SmallItem = ({ info }) => {
             src={DUMMY_IMG}
           />
         )}
-        <div className="addTo-cart flex-center justify-between text-[12px] w-[120px] h-9 text-[#3d9b6d] font-bold bg-white hover:shadow-md border border-border-color rounded-md relative top-0 cursor-pointer   ">
+        <div className="addTo-cart flex-center justify-between text-[12px] w-[120px] h-10 text-[#3d9b6d] font-bold bg-white hover:shadow-md border border-border-color rounded-md relative top-0 cursor-pointer   ">
           <button
             className="addTo-cart  text-[12px] w-6 h-9  text-[#3d9b6d] font-bold bg-white rounded-sm relative top-0 cursor-pointer   "
             onClick={HandleRemoveItem}
             data-testid="removeBtn"
-
           >
             -
           </button>
