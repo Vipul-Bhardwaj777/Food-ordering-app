@@ -50,7 +50,7 @@ const Main = () => {
 
   const ResCardPromoted = withPromoted(ResCard);
 
-  return ResList.length === 0 ? (
+  return ResList?.length === 0 ? (
     <Shimmer />
   ) : (
     <div className="main">

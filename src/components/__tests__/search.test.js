@@ -4,10 +4,12 @@ import { fireEvent, render, screen, waitFor } from "@testing-library/react";
 import { act } from "react-dom/test-utils";
 import "@testing-library/jest-dom";
 import MOCK_DATA from "../mocks/resApiMock.json";
+import { Provider } from "react-redux";
+import appStore from "../../utils/appStore";
 
 global.fetch = jest.fn(() =>
   Promise.resolve({
-    json: () => Promise.resolve(MOCK_DATA),
+    json: () => Promise.resolve(MOCK_DATA), // These test cases will only run with cards[5] API changed
   })
 );
 
@@ -16,7 +18,9 @@ describe("Main component search and filter tests", () => {
     await act(async () => {
       render(
         <BrowserRouter>
-          <Main />
+          <Provider store={appStore}>
+            <Main />
+          </Provider>
         </BrowserRouter>
       );
     });
@@ -36,7 +40,9 @@ describe("Main component search and filter tests", () => {
     await act(async () => {
       render(
         <BrowserRouter>
-          <Main />
+          <Provider store={appStore}>
+            <Main />
+          </Provider>
         </BrowserRouter>
       );
     });
